@@ -1,0 +1,78 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="GrandBlazeStudio.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DatabasePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">E:\trunk\dev\gb\data\gbdb.mdb</Value>
+    </Setting>
+    <Setting Name="ResultBasePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">e:\gb\result\</Value>
+    </Setting>
+    <Setting Name="Characters" Roaming="true" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">status\</Value>
+    </Setting>
+    <Setting Name="UpdateCnt" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="HomePageURL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://www.grand-blaze.com/</Value>
+    </Setting>
+    <Setting Name="EventScriptDir" Type="System.String" Scope="User">
+      <Value Profile="(Default)">E:\trunk\dev\gb\data\script\</Value>
+    </Setting>
+    <Setting Name="GRBLocation" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">120, 120</Value>
+    </Setting>
+    <Setting Name="GRBClientSize" Type="System.Drawing.Size" Scope="User">
+      <Value Profile="(Default)">702, 537</Value>
+    </Setting>
+    <Setting Name="GRBWindowState" Type="System.Windows.Forms.FormWindowState" Scope="User">
+      <Value Profile="(Default)">Normal</Value>
+    </Setting>
+    <Setting Name="ResultBackupPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">e:\gb\backup\</Value>
+    </Setting>
+    <Setting Name="BasePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">e:\gb\</Value>
+    </Setting>
+    <Setting Name="PublicResultPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">E:\trunk\web\public_html\grb\htdocs\result\</Value>
+    </Setting>
+    <Setting Name="PublicArchivePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">E:\trunk\web\public_html\grb\htdocs\result\download\archive\</Value>
+    </Setting>
+    <Setting Name="PublicArchiveIndexPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">E:\trunk\web\public_html\grb\htdocs\result\download\</Value>
+    </Setting>
+    <Setting Name="Partys" Roaming="true" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">party\</Value>
+    </Setting>
+    <Setting Name="Privates" Roaming="true" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">private\</Value>
+    </Setting>
+    <Setting Name="Companions" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">companion\</Value>
+    </Setting>
+    <Setting Name="Seed" Type="System.UInt32" Scope="Application">
+      <Value Profile="(Default)">16587</Value>
+    </Setting>
+    <Setting Name="SQLServerInstance" Type="System.String" Scope="User">
+      <Value Profile="(Default)">.\SQL2008EXPRESS</Value>
+    </Setting>
+    <Setting Name="DataBasePathMDF" Type="System.String" Scope="User">
+      <Value Profile="(Default)">E:\trunk\dev\gb\data\tran\GrandBlazeData.mdf</Value>
+    </Setting>
+    <Setting Name="DataBaseBackupPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">E:\trunk\dev\gb\data\backup\</Value>
+    </Setting>
+    <Setting Name="EditorPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\Program Files\EmEditor\EmEditor.exe</Value>
+    </Setting>
+    <Setting Name="LhaplusPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\Program Files (x86)\Lhaplus\Lhaplus.exe</Value>
+    </Setting>
+    <Setting Name="DataBasePathMaster" Type="System.String" Scope="User">
+      <Value Profile="(Default)">E:\trunk\dev\gb\data\master\GrandBlazeData.mdf</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

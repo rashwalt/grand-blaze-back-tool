@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ItemCreationEntity" targetNamespace="http://tempuri.org/ItemCreationEntity.xsd" xmlns:mstns="http://tempuri.org/ItemCreationEntity.xsd" xmlns="http://tempuri.org/ItemCreationEntity.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="gbdbConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="gbdbConnectionString (Settings)" PropertyReference="ApplicationSettings.CommonLibrary.CommonProperty.Properties.Settings.GlobalReference.Default.gbdbConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ItemCreationEntity" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ItemCreationEntity" msprop:Generator_DataSetName="ItemCreationEntity">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="mt_creation_item_material" msprop:Generator_UserTableName="mt_creation_item_material" msprop:Generator_RowDeletedName="creation_materialRowDeleted" msprop:Generator_RowChangedName="creation_materialRowChanged" msprop:Generator_RowClassName="creation_materialRow" msprop:Generator_RowChangingName="creation_materialRowChanging" msprop:Generator_RowEvArgName="creation_materialRowChangeEvent" msprop:Generator_RowEvHandlerName="creation_materialRowChangeEventHandler" msprop:Generator_TableClassName="creation_materialDataTable" msprop:Generator_TableVarName="tablecreation_material" msprop:Generator_RowDeletingName="creation_materialRowDeleting" msprop:Generator_TablePropName="mt_creation_item_material">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="creation_id" msprop:Generator_UserColumnName="creation_id" msprop:Generator_ColumnPropNameInRow="creation_id" msprop:Generator_ColumnVarNameInTable="columncreation_id" msprop:Generator_ColumnPropNameInTable="creation_idColumn" type="xs:int" />
+              <xs:element name="recipe_id" msprop:Generator_UserColumnName="recipe_id" msprop:Generator_ColumnPropNameInRow="recipe_id" msprop:Generator_ColumnVarNameInTable="columnrecipe_id" msprop:Generator_ColumnPropNameInTable="recipe_idColumn" type="xs:int" />
+              <xs:element name="material_id" msprop:Generator_UserColumnName="material_id" msprop:Generator_ColumnPropNameInRow="material_id" msprop:Generator_ColumnVarNameInTable="columnmaterial_id" msprop:Generator_ColumnPropNameInTable="material_idColumn" type="xs:int" />
+              <xs:element name="material_count" msprop:Generator_UserColumnName="material_count" msprop:Generator_ColumnPropNameInRow="material_count" msprop:Generator_ColumnVarNameInTable="columnmaterial_count" msprop:Generator_ColumnPropNameInTable="material_countColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ns_have_no" msprop:Generator_UserColumnName="ns_have_no" msprop:Generator_ColumnVarNameInTable="columnns_have_no" msprop:Generator_ColumnPropNameInRow="ns_have_no" msprop:Generator_ColumnPropNameInTable="ns_have_noColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="mt_creation_item_group" msprop:Generator_UserTableName="mt_creation_item_group" msprop:Generator_RowDeletedName="creation_groupRowDeleted" msprop:Generator_RowChangedName="creation_groupRowChanged" msprop:Generator_RowClassName="creation_groupRow" msprop:Generator_RowChangingName="creation_groupRowChanging" msprop:Generator_RowEvArgName="creation_groupRowChangeEvent" msprop:Generator_RowEvHandlerName="creation_groupRowChangeEventHandler" msprop:Generator_TableClassName="creation_groupDataTable" msprop:Generator_TableVarName="tablecreation_group" msprop:Generator_RowDeletingName="creation_groupRowDeleting" msprop:Generator_TablePropName="mt_creation_item_group">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="creation_id" msprop:Generator_UserColumnName="creation_id" msprop:Generator_ColumnVarNameInTable="columncreation_id" msprop:Generator_ColumnPropNameInRow="creation_id" msprop:Generator_ColumnPropNameInTable="creation_idColumn" type="xs:int" />
+              <xs:element name="recipe_id" msprop:Generator_UserColumnName="recipe_id" msprop:Generator_ColumnVarNameInTable="columnrecipe_id" msprop:Generator_ColumnPropNameInRow="recipe_id" msprop:Generator_ColumnPropNameInTable="recipe_idColumn" type="xs:int" />
+              <xs:element name="view_fg" msprop:Generator_UserColumnName="view_fg" msprop:Generator_ColumnVarNameInTable="columnview_fg" msprop:Generator_ColumnPropNameInRow="view_fg" msprop:Generator_ColumnPropNameInTable="view_fgColumn" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="mt_creation_item_recipe" msprop:Generator_UserTableName="mt_creation_item_recipe" msprop:Generator_RowDeletedName="creation_recipeRowDeleted" msprop:Generator_RowChangedName="creation_recipeRowChanged" msprop:Generator_RowClassName="creation_recipeRow" msprop:Generator_RowChangingName="creation_recipeRowChanging" msprop:Generator_RowEvArgName="creation_recipeRowChangeEvent" msprop:Generator_RowEvHandlerName="creation_recipeRowChangeEventHandler" msprop:Generator_TableClassName="creation_recipeDataTable" msprop:Generator_TableVarName="tablecreation_recipe" msprop:Generator_RowDeletingName="creation_recipeRowDeleting" msprop:Generator_TablePropName="mt_creation_item_recipe">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="creation_id" msprop:Generator_UserColumnName="creation_id" msprop:Generator_ColumnVarNameInTable="columncreation_id" msprop:Generator_ColumnPropNameInRow="creation_id" msprop:Generator_ColumnPropNameInTable="creation_idColumn" type="xs:int" />
+              <xs:element name="perks_type" msprop:Generator_UserColumnName="perks_type" msprop:Generator_ColumnVarNameInTable="columnperks_type" msprop:Generator_ColumnPropNameInRow="perks_type" msprop:Generator_ColumnPropNameInTable="perks_typeColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="perks_max" msprop:Generator_UserColumnName="perks_max" msprop:Generator_ColumnVarNameInTable="columnperks_max" msprop:Generator_ColumnPropNameInRow="perks_max" msprop:Generator_ColumnPropNameInTable="perks_maxColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="sub_perks_type_1" msprop:Generator_UserColumnName="sub_perks_type_1" msprop:Generator_ColumnVarNameInTable="columnsub_perks_type_1" msprop:Generator_ColumnPropNameInRow="sub_perks_type_1" msprop:Generator_ColumnPropNameInTable="sub_perks_type_1Column" type="xs:int" minOccurs="0" />
+              <xs:element name="sub_perks_max_1" msprop:Generator_UserColumnName="sub_perks_max_1" msprop:Generator_ColumnVarNameInTable="columnsub_perks_max_1" msprop:Generator_ColumnPropNameInRow="sub_perks_max_1" msprop:Generator_ColumnPropNameInTable="sub_perks_max_1Column" type="xs:int" minOccurs="0" />
+              <xs:element name="sub_perks_type_2" msprop:Generator_UserColumnName="sub_perks_type_2" msprop:Generator_ColumnVarNameInTable="columnsub_perks_type_2" msprop:Generator_ColumnPropNameInRow="sub_perks_type_2" msprop:Generator_ColumnPropNameInTable="sub_perks_type_2Column" type="xs:int" minOccurs="0" />
+              <xs:element name="sub_perks_max_2" msprop:Generator_UserColumnName="sub_perks_max_2" msprop:Generator_ColumnVarNameInTable="columnsub_perks_max_2" msprop:Generator_ColumnPropNameInRow="sub_perks_max_2" msprop:Generator_ColumnPropNameInTable="sub_perks_max_2Column" type="xs:int" minOccurs="0" />
+              <xs:element name="normal_quality_item_id" msprop:Generator_UserColumnName="normal_quality_item_id" msprop:Generator_ColumnVarNameInTable="columnnormal_quality_item_id" msprop:Generator_ColumnPropNameInRow="normal_quality_item_id" msprop:Generator_ColumnPropNameInTable="normal_quality_item_idColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="normal_quality_count" msprop:Generator_UserColumnName="normal_quality_count" msprop:Generator_ColumnVarNameInTable="columnnormal_quality_count" msprop:Generator_ColumnPropNameInRow="normal_quality_count" msprop:Generator_ColumnPropNameInTable="normal_quality_countColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="high_quality_1_item_id" msprop:Generator_UserColumnName="high_quality_1_item_id" msprop:Generator_ColumnVarNameInTable="columnhigh_quality_1_item_id" msprop:Generator_ColumnPropNameInRow="high_quality_1_item_id" msprop:Generator_ColumnPropNameInTable="high_quality_1_item_idColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="high_quality_1_count" msprop:Generator_UserColumnName="high_quality_1_count" msprop:Generator_ColumnVarNameInTable="columnhigh_quality_1_count" msprop:Generator_ColumnPropNameInRow="high_quality_1_count" msprop:Generator_ColumnPropNameInTable="high_quality_1_countColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="high_quality_2_item_id" msprop:Generator_UserColumnName="high_quality_2_item_id" msprop:Generator_ColumnVarNameInTable="columnhigh_quality_2_item_id" msprop:Generator_ColumnPropNameInRow="high_quality_2_item_id" msprop:Generator_ColumnPropNameInTable="high_quality_2_item_idColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="high_quality_2_count" msprop:Generator_UserColumnName="high_quality_2_count" msprop:Generator_ColumnVarNameInTable="columnhigh_quality_2_count" msprop:Generator_ColumnPropNameInRow="high_quality_2_count" msprop:Generator_ColumnPropNameInTable="high_quality_2_countColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="high_quality_3_item_id" msprop:Generator_UserColumnName="high_quality_3_item_id" msprop:Generator_ColumnVarNameInTable="columnhigh_quality_3_item_id" msprop:Generator_ColumnPropNameInRow="high_quality_3_item_id" msprop:Generator_ColumnPropNameInTable="high_quality_3_item_idColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="high_quality_3_count" msprop:Generator_UserColumnName="high_quality_3_count" msprop:Generator_ColumnVarNameInTable="columnhigh_quality_3_count" msprop:Generator_ColumnPropNameInRow="high_quality_3_count" msprop:Generator_ColumnPropNameInTable="high_quality_3_countColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="high_quality_4_item_id" msprop:Generator_UserColumnName="high_quality_4_item_id" msprop:Generator_ColumnVarNameInTable="columnhigh_quality_4_item_id" msprop:Generator_ColumnPropNameInRow="high_quality_4_item_id" msprop:Generator_ColumnPropNameInTable="high_quality_4_item_idColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="high_quality_4_count" msprop:Generator_UserColumnName="high_quality_4_count" msprop:Generator_ColumnVarNameInTable="columnhigh_quality_4_count" msprop:Generator_ColumnPropNameInRow="high_quality_4_count" msprop:Generator_ColumnPropNameInTable="high_quality_4_countColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:mt_creation_item_material" />
+      <xs:field xpath="mstns:creation_id" />
+      <xs:field xpath="mstns:recipe_id" />
+      <xs:field xpath="mstns:material_id" />
+    </xs:unique>
+    <xs:unique name="mt_creation_item_group_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:mt_creation_item_group" />
+      <xs:field xpath="mstns:creation_id" />
+      <xs:field xpath="mstns:recipe_id" />
+    </xs:unique>
+    <xs:unique name="mt_creation_item_recipe_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:mt_creation_item_recipe" />
+      <xs:field xpath="mstns:creation_id" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="creation_group_creation_material" msdata:parent="mt_creation_item_group" msdata:child="mt_creation_item_material" msdata:parentkey="creation_id recipe_id" msdata:childkey="creation_id recipe_id" msprop:Generator_UserRelationName="creation_group_creation_material" msprop:Generator_RelationVarName="relationcreation_group_creation_material" msprop:Generator_UserChildTable="mt_creation_item_material" msprop:Generator_UserParentTable="mt_creation_item_group" msprop:Generator_ParentPropName="creation_groupRowParent" msprop:Generator_ChildPropName="Getcreation_materialRows" />
+      <msdata:Relationship name="creation_recipe_creation_group" msdata:parent="mt_creation_item_recipe" msdata:child="mt_creation_item_group" msdata:parentkey="creation_id" msdata:childkey="creation_id" msprop:Generator_UserRelationName="creation_recipe_creation_group" msprop:Generator_RelationVarName="relationcreation_recipe_creation_group" msprop:Generator_UserChildTable="mt_creation_item_group" msprop:Generator_UserParentTable="mt_creation_item_recipe" msprop:Generator_ParentPropName="creation_recipeRow" msprop:Generator_ChildPropName="Getcreation_groupRows" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

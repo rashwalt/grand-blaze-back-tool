@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="InstallDataEntity" targetNamespace="http://tempuri.org/InstallDataEntity.xsd" xmlns:mstns="http://tempuri.org/InstallDataEntity.xsd" xmlns="http://tempuri.org/InstallDataEntity.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="2" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="gbdbConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="gbdbConnectionString (Settings)" PropertyReference="ApplicationSettings.CommonLibrary.CommonProperty.Properties.Settings.GlobalReference.Default.gbdbConnectionString" Provider="System.Data.OleDb" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="GrandBlazeDataConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="GrandBlazeDataConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.CommonLibrary.CommonProperty.Properties.Settings.GlobalReference.Default.GrandBlazeDataConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="GrandBlazeDataConnectionString1" IsAppSettingsProperty="true" Modifier="Assembly" Name="GrandBlazeDataConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.CommonLibrary.CommonProperty.Properties.Settings.GlobalReference.Default.GrandBlazeDataConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="InstallDataEntity" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="False" msprop:Generator_DataSetName="InstallDataEntity" msprop:Generator_UserDSName="InstallDataEntity">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="mt_install_class_skill" msprop:Generator_UserTableName="mt_install_class_skill" msprop:Generator_RowEvArgName="mt_install_class_skillRowChangeEvent" msprop:Generator_TableVarName="tablemt_install_class_skill" msprop:Generator_TablePropName="mt_install_class_skill" msprop:Generator_RowDeletingName="mt_install_class_skillRowDeleting" msprop:Generator_RowChangingName="mt_install_class_skillRowChanging" msprop:Generator_RowDeletedName="mt_install_class_skillRowDeleted" msprop:Generator_RowEvHandlerName="mt_install_class_skillRowChangeEventHandler" msprop:Generator_TableClassName="mt_install_class_skillDataTable" msprop:Generator_RowChangedName="mt_install_class_skillRowChanged" msprop:Generator_RowClassName="mt_install_class_skillRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="install_id" msprop:Generator_ColumnVarNameInTable="columninstall_id" msprop:Generator_ColumnPropNameInRow="install_id" msprop:Generator_ColumnPropNameInTable="install_idColumn" msprop:Generator_UserColumnName="install_id" type="xs:int" />
+              <xs:element name="perks_id" msprop:Generator_ColumnVarNameInTable="columnperks_id" msprop:Generator_ColumnPropNameInRow="perks_id" msprop:Generator_ColumnPropNameInTable="perks_idColumn" msprop:Generator_UserColumnName="perks_id" type="xs:int" />
+              <xs:element name="install_level" msprop:Generator_ColumnVarNameInTable="columninstall_level" msprop:Generator_ColumnPropNameInRow="install_level" msprop:Generator_ColumnPropNameInTable="install_levelColumn" msprop:Generator_UserColumnName="install_level" type="xs:int" />
+              <xs:element name="only_mode" msprop:Generator_ColumnVarNameInTable="columnonly_mode" msprop:Generator_ColumnPropNameInRow="only_mode" msprop:Generator_ColumnPropNameInTable="only_modeColumn" msprop:Generator_UserColumnName="only_mode" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="mt_install_class_list" msprop:Generator_UserTableName="mt_install_class_list" msprop:Generator_RowEvArgName="mt_install_class_listRowChangeEvent" msprop:Generator_TableVarName="tablemt_install_class_list" msprop:Generator_TablePropName="mt_install_class_list" msprop:Generator_RowDeletingName="mt_install_class_listRowDeleting" msprop:Generator_RowChangingName="mt_install_class_listRowChanging" msprop:Generator_RowDeletedName="mt_install_class_listRowDeleted" msprop:Generator_RowEvHandlerName="mt_install_class_listRowChangeEventHandler" msprop:Generator_TableClassName="mt_install_class_listDataTable" msprop:Generator_RowChangedName="mt_install_class_listRowChanged" msprop:Generator_RowClassName="mt_install_class_listRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="install_id" msprop:Generator_ColumnVarNameInTable="columninstall_id" msprop:Generator_ColumnPropNameInRow="install_id" msprop:Generator_ColumnPropNameInTable="install_idColumn" msprop:Generator_UserColumnName="install_id" type="xs:int" />
+              <xs:element name="classname" msprop:Generator_ColumnVarNameInTable="columnclassname" msprop:Generator_ColumnPropNameInRow="classname" msprop:Generator_ColumnPropNameInTable="classnameColumn" msprop:Generator_UserColumnName="classname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="up_hp" msprop:Generator_ColumnVarNameInTable="columnup_hp" msprop:Generator_ColumnPropNameInRow="up_hp" msprop:Generator_ColumnPropNameInTable="up_hpColumn" msprop:Generator_UserColumnName="up_hp" type="xs:int" minOccurs="0" />
+              <xs:element name="up_mp" msprop:Generator_ColumnVarNameInTable="columnup_mp" msprop:Generator_ColumnPropNameInRow="up_mp" msprop:Generator_ColumnPropNameInTable="up_mpColumn" msprop:Generator_UserColumnName="up_mp" type="xs:int" minOccurs="0" />
+              <xs:element name="up_str" msprop:Generator_ColumnVarNameInTable="columnup_str" msprop:Generator_ColumnPropNameInRow="up_str" msprop:Generator_ColumnPropNameInTable="up_strColumn" msprop:Generator_UserColumnName="up_str" type="xs:int" minOccurs="0" />
+              <xs:element name="up_agi" msprop:Generator_ColumnVarNameInTable="columnup_agi" msprop:Generator_ColumnPropNameInRow="up_agi" msprop:Generator_ColumnPropNameInTable="up_agiColumn" msprop:Generator_UserColumnName="up_agi" type="xs:int" minOccurs="0" />
+              <xs:element name="up_mag" msprop:Generator_ColumnVarNameInTable="columnup_mag" msprop:Generator_ColumnPropNameInRow="up_mag" msprop:Generator_ColumnPropNameInTable="up_magColumn" msprop:Generator_UserColumnName="up_mag" type="xs:int" minOccurs="0" />
+              <xs:element name="up_unq" msprop:Generator_ColumnVarNameInTable="columnup_unq" msprop:Generator_ColumnPropNameInRow="up_unq" msprop:Generator_ColumnPropNameInTable="up_unqColumn" msprop:Generator_UserColumnName="up_unq" type="xs:int" minOccurs="0" />
+              <xs:element name="class_comment" msprop:Generator_ColumnVarNameInTable="columnclass_comment" msprop:Generator_ColumnPropNameInRow="class_comment" msprop:Generator_ColumnPropNameInTable="class_commentColumn" msprop:Generator_UserColumnName="class_comment" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:mt_install_class_skill" />
+      <xs:field xpath="mstns:install_id" />
+      <xs:field xpath="mstns:perks_id" />
+    </xs:unique>
+    <xs:unique name="mt_install_class_list_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:mt_install_class_list" />
+      <xs:field xpath="mstns:install_id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

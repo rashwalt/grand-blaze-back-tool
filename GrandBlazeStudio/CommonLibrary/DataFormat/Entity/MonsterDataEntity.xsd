@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MonsterDataEntity" targetNamespace="http://tempuri.org/MonsterDataEntity.xsd" xmlns:mstns="http://tempuri.org/MonsterDataEntity.xsd" xmlns="http://tempuri.org/MonsterDataEntity.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="GrandBlazeMasterConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="GrandBlazeMasterConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.CommonLibrary.Properties.Settings.GlobalReference.Default.GrandBlazeMasterConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="MonsterDataEntity" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="MonsterDataEntity" msprop:Generator_UserDSName="MonsterDataEntity">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="mt_monster_category" msprop:Generator_UserTableName="mt_monster_category" msprop:Generator_RowEvArgName="mt_monster_categoryRowChangeEvent" msprop:Generator_TableVarName="tablemt_monster_category" msprop:Generator_TablePropName="mt_monster_category" msprop:Generator_RowDeletingName="mt_monster_categoryRowDeleting" msprop:Generator_RowChangingName="mt_monster_categoryRowChanging" msprop:Generator_RowDeletedName="mt_monster_categoryRowDeleted" msprop:Generator_RowEvHandlerName="mt_monster_categoryRowChangeEventHandler" msprop:Generator_TableClassName="mt_monster_categoryDataTable" msprop:Generator_RowChangedName="mt_monster_categoryRowChanged" msprop:Generator_RowClassName="mt_monster_categoryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="category_id" msprop:Generator_ColumnVarNameInTable="columncategory_id" msprop:Generator_ColumnPropNameInRow="category_id" msprop:Generator_ColumnPropNameInTable="category_idColumn" msprop:Generator_UserColumnName="category_id" type="xs:int" />
+              <xs:element name="category_name" msprop:Generator_ColumnVarNameInTable="columncategory_name" msprop:Generator_ColumnPropNameInRow="category_name" msprop:Generator_ColumnPropNameInTable="category_nameColumn" msprop:Generator_UserColumnName="category_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="mt_monster_pop_weather" msprop:Generator_UserTableName="mt_monster_pop_weather" msprop:Generator_RowEvArgName="mt_monster_pop_weatherRowChangeEvent" msprop:Generator_TableVarName="tablemt_monster_pop_weather" msprop:Generator_TablePropName="mt_monster_pop_weather" msprop:Generator_RowDeletingName="mt_monster_pop_weatherRowDeleting" msprop:Generator_RowChangingName="mt_monster_pop_weatherRowChanging" msprop:Generator_RowDeletedName="mt_monster_pop_weatherRowDeleted" msprop:Generator_RowEvHandlerName="mt_monster_pop_weatherRowChangeEventHandler" msprop:Generator_TableClassName="mt_monster_pop_weatherDataTable" msprop:Generator_RowChangedName="mt_monster_pop_weatherRowChanged" msprop:Generator_RowClassName="mt_monster_pop_weatherRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="monster_id" msprop:Generator_ColumnVarNameInTable="columnmonster_id" msprop:Generator_ColumnPropNameInRow="monster_id" msprop:Generator_ColumnPropNameInTable="monster_idColumn" msprop:Generator_UserColumnName="monster_id" type="xs:int" />
+              <xs:element name="weather_id" msprop:Generator_ColumnVarNameInTable="columnweather_id" msprop:Generator_ColumnPropNameInRow="weather_id" msprop:Generator_ColumnPropNameInTable="weather_idColumn" msprop:Generator_UserColumnName="weather_id" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="mt_monster_action" msprop:Generator_UserTableName="mt_monster_action" msprop:Generator_RowEvArgName="mt_monster_actionRowChangeEvent" msprop:Generator_TableVarName="tablemt_monster_action" msprop:Generator_TablePropName="mt_monster_action" msprop:Generator_RowDeletingName="mt_monster_actionRowDeleting" msprop:Generator_RowChangingName="mt_monster_actionRowChanging" msprop:Generator_RowDeletedName="mt_monster_actionRowDeleted" msprop:Generator_RowEvHandlerName="mt_monster_actionRowChangeEventHandler" msprop:Generator_TableClassName="mt_monster_actionDataTable" msprop:Generator_RowChangedName="mt_monster_actionRowChanged" msprop:Generator_RowClassName="mt_monster_actionRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="monster_id" msprop:Generator_ColumnVarNameInTable="columnmonster_id" msprop:Generator_ColumnPropNameInRow="monster_id" msprop:Generator_ColumnPropNameInTable="monster_idColumn" msprop:Generator_UserColumnName="monster_id" type="xs:int" />
+              <xs:element name="action_no" msprop:Generator_ColumnVarNameInTable="columnaction_no" msprop:Generator_ColumnPropNameInRow="action_no" msprop:Generator_ColumnPropNameInTable="action_noColumn" msprop:Generator_UserColumnName="action_no" type="xs:int" />
+              <xs:element name="timing1" msprop:Generator_ColumnVarNameInTable="columntiming1" msprop:Generator_ColumnPropNameInRow="timing1" msprop:Generator_ColumnPropNameInTable="timing1Column" msprop:Generator_UserColumnName="timing1" type="xs:int" minOccurs="0" />
+              <xs:element name="timing2" msprop:Generator_ColumnVarNameInTable="columntiming2" msprop:Generator_ColumnPropNameInRow="timing2" msprop:Generator_ColumnPropNameInTable="timing2Column" msprop:Generator_UserColumnName="timing2" type="xs:int" minOccurs="0" />
+              <xs:element name="timing3" msprop:Generator_ColumnVarNameInTable="columntiming3" msprop:Generator_ColumnPropNameInRow="timing3" msprop:Generator_ColumnPropNameInTable="timing3Column" msprop:Generator_UserColumnName="timing3" type="xs:int" minOccurs="0" />
+              <xs:element name="action_target" msprop:Generator_ColumnVarNameInTable="columnaction_target" msprop:Generator_ColumnPropNameInRow="action_target" msprop:Generator_ColumnPropNameInTable="action_targetColumn" msprop:Generator_UserColumnName="action_target" type="xs:int" minOccurs="0" />
+              <xs:element name="action" msprop:Generator_ColumnVarNameInTable="columnaction" msprop:Generator_ColumnPropNameInRow="action" msprop:Generator_ColumnPropNameInTable="actionColumn" msprop:Generator_UserColumnName="action" type="xs:int" minOccurs="0" />
+              <xs:element name="probability" msprop:Generator_ColumnVarNameInTable="columnprobability" msprop:Generator_ColumnPropNameInRow="probability" msprop:Generator_ColumnPropNameInTable="probabilityColumn" msprop:Generator_UserColumnName="probability" type="xs:int" minOccurs="0" />
+              <xs:element name="max_count" msprop:Generator_ColumnVarNameInTable="columnmax_count" msprop:Generator_ColumnPropNameInRow="max_count" msprop:Generator_ColumnPropNameInTable="max_countColumn" msprop:Generator_UserColumnName="max_count" type="xs:int" minOccurs="0" />
+              <xs:element name="perks_id" msprop:Generator_ColumnVarNameInTable="columnperks_id" msprop:Generator_ColumnPropNameInRow="perks_id" msprop:Generator_ColumnPropNameInTable="perks_idColumn" msprop:Generator_UserColumnName="perks_id" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="mt_monster_element" msprop:Generator_UserTableName="mt_monster_element" msprop:Generator_RowEvArgName="mt_monster_elementRowChangeEvent" msprop:Generator_TableVarName="tablemt_monster_element" msprop:Generator_TablePropName="mt_monster_element" msprop:Generator_RowDeletingName="mt_monster_elementRowDeleting" msprop:Generator_RowChangingName="mt_monster_elementRowChanging" msprop:Generator_RowDeletedName="mt_monster_elementRowDeleted" msprop:Generator_RowEvHandlerName="mt_monster_elementRowChangeEventHandler" msprop:Generator_TableClassName="mt_monster_elementDataTable" msprop:Generator_RowChangedName="mt_monster_elementRowChanged" msprop:Generator_RowClassName="mt_monster_elementRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="monster_id" msprop:Generator_ColumnVarNameInTable="columnmonster_id" msprop:Generator_ColumnPropNameInRow="monster_id" msprop:Generator_ColumnPropNameInTable="monster_idColumn" msprop:Generator_UserColumnName="monster_id" type="xs:int" />
+              <xs:element name="atkordfe" msprop:Generator_ColumnVarNameInTable="columnatkordfe" msprop:Generator_ColumnPropNameInRow="atkordfe" msprop:Generator_ColumnPropNameInTable="atkordfeColumn" msprop:Generator_UserColumnName="atkordfe" type="xs:int" />
+              <xs:element name="fire" msprop:Generator_ColumnVarNameInTable="columnfire" msprop:Generator_ColumnPropNameInRow="fire" msprop:Generator_ColumnPropNameInTable="fireColumn" msprop:Generator_UserColumnName="fire" type="xs:int" minOccurs="0" />
+              <xs:element name="freeze" msprop:Generator_ColumnVarNameInTable="columnfreeze" msprop:Generator_ColumnPropNameInRow="freeze" msprop:Generator_ColumnPropNameInTable="freezeColumn" msprop:Generator_UserColumnName="freeze" type="xs:int" minOccurs="0" />
+              <xs:element name="air" msprop:Generator_ColumnVarNameInTable="columnair" msprop:Generator_ColumnPropNameInRow="air" msprop:Generator_ColumnPropNameInTable="airColumn" msprop:Generator_UserColumnName="air" type="xs:int" minOccurs="0" />
+              <xs:element name="earth" msprop:Generator_ColumnVarNameInTable="columnearth" msprop:Generator_ColumnPropNameInRow="earth" msprop:Generator_ColumnPropNameInTable="earthColumn" msprop:Generator_UserColumnName="earth" type="xs:int" minOccurs="0" />
+              <xs:element name="water" msprop:Generator_ColumnVarNameInTable="columnwater" msprop:Generator_ColumnPropNameInRow="water" msprop:Generator_ColumnPropNameInTable="waterColumn" msprop:Generator_UserColumnName="water" type="xs:int" minOccurs="0" />
+              <xs:element name="thunder" msprop:Generator_ColumnVarNameInTable="columnthunder" msprop:Generator_ColumnPropNameInRow="thunder" msprop:Generator_ColumnPropNameInTable="thunderColumn" msprop:Generator_UserColumnName="thunder" type="xs:int" minOccurs="0" />
+              <xs:element name="holy" msprop:Generator_ColumnVarNameInTable="columnholy" msprop:Generator_ColumnPropNameInRow="holy" msprop:Generator_ColumnPropNameInTable="holyColumn" msprop:Generator_UserColumnName="holy" type="xs:int" minOccurs="0" />
+              <xs:element name="dark" msprop:Generator_ColumnVarNameInTable="columndark" msprop:Generator_ColumnPropNameInRow="dark" msprop:Generator_ColumnPropNameInTable="darkColumn" msprop:Generator_UserColumnName="dark" type="xs:int" minOccurs="0" />
+              <xs:element name="slash" msprop:Generator_ColumnVarNameInTable="columnslash" msprop:Generator_ColumnPropNameInRow="slash" msprop:Generator_ColumnPropNameInTable="slashColumn" msprop:Generator_UserColumnName="slash" type="xs:int" minOccurs="0" />
+              <xs:element name="pierce" msprop:Generator_ColumnVarNameInTable="columnpierce" msprop:Generator_ColumnPropNameInRow="pierce" msprop:Generator_ColumnPropNameInTable="pierceColumn" msprop:Generator_UserColumnName="pierce" type="xs:int" minOccurs="0" />
+              <xs:element name="strike" msprop:Generator_ColumnVarNameInTable="columnstrike" msprop:Generator_ColumnPropNameInRow="strike" msprop:Generator_ColumnPropNameInTable="strikeColumn" msprop:Generator_UserColumnName="strike" type="xs:int" minOccurs="0" />
+              <xs:element name="break" msprop:Generator_ColumnVarNameInTable="columnbreak" msprop:Generator_ColumnPropNameInRow="_break" msprop:Generator_ColumnPropNameInTable="breakColumn" msprop:Generator_UserColumnName="break" type="xs:int" minOccurs="0" />
+              <xs:element name="status_list" msprop:Generator_ColumnVarNameInTable="columnstatus_list" msprop:Generator_ColumnPropNameInRow="status_list" msprop:Generator_ColumnPropNameInTable="status_listColumn" msprop:Generator_UserColumnName="status_list" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="charge" msprop:Generator_ColumnVarNameInTable="columncharge" msprop:Generator_ColumnPropNameInRow="charge" msprop:Generator_ColumnPropNameInTable="chargeColumn" msprop:Generator_UserColumnName="charge" type="xs:int" minOccurs="0" />
+              <xs:element name="range" msprop:Generator_ColumnVarNameInTable="columnrange" msprop:Generator_ColumnPropNameInRow="range" msprop:Generator_ColumnPropNameInTable="rangeColumn" msprop:Generator_UserColumnName="range" type="xs:int" minOccurs="0" />
+              <xs:element name="avoid_physical" msprop:Generator_ColumnVarNameInTable="columnavoid_physical" msprop:Generator_ColumnPropNameInRow="avoid_physical" msprop:Generator_ColumnPropNameInTable="avoid_physicalColumn" msprop:Generator_UserColumnName="avoid_physical" type="xs:int" minOccurs="0" />
+              <xs:element name="avoid_magical" msprop:Generator_ColumnVarNameInTable="columnavoid_magical" msprop:Generator_ColumnPropNameInRow="avoid_magical" msprop:Generator_ColumnPropNameInTable="avoid_magicalColumn" msprop:Generator_UserColumnName="avoid_magical" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="mt_monster_list" msprop:Generator_UserTableName="mt_monster_list" msprop:Generator_RowEvArgName="mt_monster_listRowChangeEvent" msprop:Generator_TableVarName="tablemt_monster_list" msprop:Generator_TablePropName="mt_monster_list" msprop:Generator_RowDeletingName="mt_monster_listRowDeleting" msprop:Generator_RowChangingName="mt_monster_listRowChanging" msprop:Generator_RowDeletedName="mt_monster_listRowDeleted" msprop:Generator_RowEvHandlerName="mt_monster_listRowChangeEventHandler" msprop:Generator_TableClassName="mt_monster_listDataTable" msprop:Generator_RowChangedName="mt_monster_listRowChanged" msprop:Generator_RowClassName="mt_monster_listRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="monster_id" msprop:Generator_ColumnVarNameInTable="columnmonster_id" msprop:Generator_ColumnPropNameInRow="monster_id" msprop:Generator_ColumnPropNameInTable="monster_idColumn" msprop:Generator_UserColumnName="monster_id" type="xs:int" />
+              <xs:element name="monster_name" msprop:Generator_ColumnVarNameInTable="columnmonster_name" msprop:Generator_ColumnPropNameInRow="monster_name" msprop:Generator_ColumnPropNameInTable="monster_nameColumn" msprop:Generator_UserColumnName="monster_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="category_id" msprop:Generator_ColumnVarNameInTable="columncategory_id" msprop:Generator_ColumnPropNameInRow="category_id" msprop:Generator_ColumnPropNameInTable="category_idColumn" msprop:Generator_UserColumnName="category_id" type="xs:int" minOccurs="0" />
+              <xs:element name="formation" msprop:Generator_ColumnVarNameInTable="columnformation" msprop:Generator_ColumnPropNameInRow="formation" msprop:Generator_ColumnPropNameInTable="formationColumn" msprop:Generator_UserColumnName="formation" type="xs:int" minOccurs="0" />
+              <xs:element name="max_multi_act" msprop:Generator_ColumnVarNameInTable="columnmax_multi_act" msprop:Generator_ColumnPropNameInRow="max_multi_act" msprop:Generator_ColumnPropNameInTable="max_multi_actColumn" msprop:Generator_UserColumnName="max_multi_act" type="xs:int" minOccurs="0" />
+              <xs:element name="multi_act_prob" msprop:Generator_ColumnVarNameInTable="columnmulti_act_prob" msprop:Generator_ColumnPropNameInRow="multi_act_prob" msprop:Generator_ColumnPropNameInTable="multi_act_probColumn" msprop:Generator_UserColumnName="multi_act_prob" type="xs:int" minOccurs="0" />
+              <xs:element name="target" msprop:Generator_ColumnVarNameInTable="columntarget" msprop:Generator_ColumnPropNameInRow="target" msprop:Generator_ColumnPropNameInTable="targetColumn" msprop:Generator_UserColumnName="target" type="xs:int" minOccurs="0" />
+              <xs:element name="belong_kb" msprop:Generator_ColumnVarNameInTable="columnbelong_kb" msprop:Generator_ColumnPropNameInRow="belong_kb" msprop:Generator_ColumnPropNameInTable="belong_kbColumn" msprop:Generator_UserColumnName="belong_kb" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="mt_monster_have_item" msprop:Generator_UserTableName="mt_monster_have_item" msprop:Generator_RowEvArgName="mt_monster_have_itemRowChangeEvent" msprop:Generator_TableVarName="tablemt_monster_have_item" msprop:Generator_TablePropName="mt_monster_have_item" msprop:Generator_RowDeletingName="mt_monster_have_itemRowDeleting" msprop:Generator_RowChangingName="mt_monster_have_itemRowChanging" msprop:Generator_RowDeletedName="mt_monster_have_itemRowDeleted" msprop:Generator_RowEvHandlerName="mt_monster_have_itemRowChangeEventHandler" msprop:Generator_TableClassName="mt_monster_have_itemDataTable" msprop:Generator_RowChangedName="mt_monster_have_itemRowChanged" msprop:Generator_RowClassName="mt_monster_have_itemRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="monster_id" msprop:Generator_ColumnVarNameInTable="columnmonster_id" msprop:Generator_ColumnPropNameInRow="monster_id" msprop:Generator_ColumnPropNameInTable="monster_idColumn" msprop:Generator_UserColumnName="monster_id" type="xs:int" />
+              <xs:element name="drop_type" msprop:Generator_ColumnVarNameInTable="columndrop_type" msprop:Generator_ColumnPropNameInRow="drop_type" msprop:Generator_ColumnPropNameInTable="drop_typeColumn" msprop:Generator_UserColumnName="drop_type" type="xs:int" />
+              <xs:element name="get_synx" msprop:Generator_ColumnVarNameInTable="columnget_synx" msprop:Generator_ColumnPropNameInRow="get_synx" msprop:Generator_ColumnPropNameInTable="get_synxColumn" msprop:Generator_UserColumnName="get_synx" type="xs:int" />
+              <xs:element name="it_num" msprop:Generator_ColumnVarNameInTable="columnit_num" msprop:Generator_ColumnPropNameInRow="it_num" msprop:Generator_ColumnPropNameInTable="it_numColumn" msprop:Generator_UserColumnName="it_num" type="xs:int" minOccurs="0" />
+              <xs:element name="it_box_count" msprop:Generator_ColumnVarNameInTable="columnit_box_count" msprop:Generator_ColumnPropNameInRow="it_box_count" msprop:Generator_ColumnPropNameInTable="it_box_countColumn" msprop:Generator_UserColumnName="it_box_count" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="mt_monster_battle_ability" msprop:Generator_UserTableName="mt_monster_battle_ability" msprop:Generator_RowEvArgName="mt_monster_battle_abilityRowChangeEvent" msprop:Generator_TableVarName="tablemt_monster_battle_ability" msprop:Generator_TablePropName="mt_monster_battle_ability" msprop:Generator_RowDeletingName="mt_monster_battle_abilityRowDeleting" msprop:Generator_RowChangingName="mt_monster_battle_abilityRowChanging" msprop:Generator_RowDeletedName="mt_monster_battle_abilityRowDeleted" msprop:Generator_RowEvHandlerName="mt_monster_battle_abilityRowChangeEventHandler" msprop:Generator_TableClassName="mt_monster_battle_abilityDataTable" msprop:Generator_RowChangedName="mt_monster_battle_abilityRowChanged" msprop:Generator_RowClassName="mt_monster_battle_abilityRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="monster_id" msprop:Generator_ColumnVarNameInTable="columnmonster_id" msprop:Generator_ColumnPropNameInRow="monster_id" msprop:Generator_ColumnPropNameInTable="monster_idColumn" msprop:Generator_UserColumnName="monster_id" type="xs:int" />
+              <xs:element name="level" msprop:Generator_ColumnVarNameInTable="columnlevel" msprop:Generator_ColumnPropNameInRow="level" msprop:Generator_ColumnPropNameInTable="levelColumn" msprop:Generator_UserColumnName="level" type="xs:int" />
+              <xs:element name="hp" msprop:Generator_ColumnVarNameInTable="columnhp" msprop:Generator_ColumnPropNameInRow="hp" msprop:Generator_ColumnPropNameInTable="hpColumn" msprop:Generator_UserColumnName="hp" type="xs:int" minOccurs="0" />
+              <xs:element name="mp" msprop:Generator_ColumnVarNameInTable="columnmp" msprop:Generator_ColumnPropNameInRow="mp" msprop:Generator_ColumnPropNameInTable="mpColumn" msprop:Generator_UserColumnName="mp" type="xs:int" minOccurs="0" />
+              <xs:element name="str" msprop:Generator_ColumnVarNameInTable="columnstr" msprop:Generator_ColumnPropNameInRow="str" msprop:Generator_ColumnPropNameInTable="strColumn" msprop:Generator_UserColumnName="str" type="xs:int" minOccurs="0" />
+              <xs:element name="agi" msprop:Generator_ColumnVarNameInTable="columnagi" msprop:Generator_ColumnPropNameInRow="agi" msprop:Generator_ColumnPropNameInTable="agiColumn" msprop:Generator_UserColumnName="agi" type="xs:int" minOccurs="0" />
+              <xs:element name="mag" msprop:Generator_ColumnVarNameInTable="columnmag" msprop:Generator_ColumnPropNameInRow="mag" msprop:Generator_ColumnPropNameInTable="magColumn" msprop:Generator_UserColumnName="mag" type="xs:int" minOccurs="0" />
+              <xs:element name="unq" msprop:Generator_ColumnVarNameInTable="columnunq" msprop:Generator_ColumnPropNameInRow="unq" msprop:Generator_ColumnPropNameInTable="unqColumn" msprop:Generator_UserColumnName="unq" type="xs:int" minOccurs="0" />
+              <xs:element name="atk" msprop:Generator_ColumnVarNameInTable="columnatk" msprop:Generator_ColumnPropNameInRow="atk" msprop:Generator_ColumnPropNameInTable="atkColumn" msprop:Generator_UserColumnName="atk" type="xs:int" minOccurs="0" />
+              <xs:element name="sub_atk" msprop:Generator_ColumnVarNameInTable="columnsub_atk" msprop:Generator_ColumnPropNameInRow="sub_atk" msprop:Generator_ColumnPropNameInTable="sub_atkColumn" msprop:Generator_UserColumnName="sub_atk" type="xs:int" minOccurs="0" />
+              <xs:element name="dfe" msprop:Generator_ColumnVarNameInTable="columndfe" msprop:Generator_ColumnPropNameInRow="dfe" msprop:Generator_ColumnPropNameInTable="dfeColumn" msprop:Generator_UserColumnName="dfe" type="xs:int" minOccurs="0" />
+              <xs:element name="mgr" msprop:Generator_ColumnVarNameInTable="columnmgr" msprop:Generator_ColumnPropNameInRow="mgr" msprop:Generator_ColumnPropNameInTable="mgrColumn" msprop:Generator_UserColumnName="mgr" type="xs:int" minOccurs="0" />
+              <xs:element name="avd" msprop:Generator_ColumnVarNameInTable="columnavd" msprop:Generator_ColumnPropNameInRow="avd" msprop:Generator_ColumnPropNameInTable="avdColumn" msprop:Generator_UserColumnName="avd" type="xs:int" minOccurs="0" />
+              <xs:element name="exp" msprop:Generator_ColumnVarNameInTable="columnexp" msprop:Generator_ColumnPropNameInRow="exp" msprop:Generator_ColumnPropNameInTable="expColumn" msprop:Generator_UserColumnName="exp" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="mt_monster_serif" msprop:Generator_UserTableName="mt_monster_serif" msprop:Generator_RowEvArgName="mt_monster_serifRowChangeEvent" msprop:Generator_TableVarName="tablemt_monster_serif" msprop:Generator_TablePropName="mt_monster_serif" msprop:Generator_RowDeletingName="mt_monster_serifRowDeleting" msprop:Generator_RowChangingName="mt_monster_serifRowChanging" msprop:Generator_RowDeletedName="mt_monster_serifRowDeleted" msprop:Generator_RowEvHandlerName="mt_monster_serifRowChangeEventHandler" msprop:Generator_TableClassName="mt_monster_serifDataTable" msprop:Generator_RowChangedName="mt_monster_serifRowChanged" msprop:Generator_RowClassName="mt_monster_serifRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="monster_id" msprop:Generator_ColumnVarNameInTable="columnmonster_id" msprop:Generator_ColumnPropNameInRow="monster_id" msprop:Generator_ColumnPropNameInTable="monster_idColumn" msprop:Generator_UserColumnName="monster_id" type="xs:int" />
+              <xs:element name="serif_no" msprop:Generator_ColumnVarNameInTable="columnserif_no" msprop:Generator_ColumnPropNameInRow="serif_no" msprop:Generator_ColumnPropNameInTable="serif_noColumn" msprop:Generator_UserColumnName="serif_no" type="xs:int" />
+              <xs:element name="situation" msprop:Generator_ColumnVarNameInTable="columnsituation" msprop:Generator_ColumnPropNameInRow="situation" msprop:Generator_ColumnPropNameInTable="situationColumn" msprop:Generator_UserColumnName="situation" type="xs:int" />
+              <xs:element name="perks_id" msprop:Generator_ColumnVarNameInTable="columnperks_id" msprop:Generator_ColumnPropNameInRow="perks_id" msprop:Generator_ColumnPropNameInTable="perks_idColumn" msprop:Generator_UserColumnName="perks_id" type="xs:int" />
+              <xs:element name="serif_text" msprop:Generator_ColumnVarNameInTable="columnserif_text" msprop:Generator_ColumnPropNameInRow="serif_text" msprop:Generator_ColumnPropNameInTable="serif_textColumn" msprop:Generator_UserColumnName="serif_text" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:mt_monster_category" />
+      <xs:field xpath="mstns:category_id" />
+    </xs:unique>
+    <xs:unique name="mt_monster_pop_weather_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:mt_monster_pop_weather" />
+      <xs:field xpath="mstns:monster_id" />
+      <xs:field xpath="mstns:weather_id" />
+    </xs:unique>
+    <xs:unique name="mt_monster_action_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:mt_monster_action" />
+      <xs:field xpath="mstns:monster_id" />
+      <xs:field xpath="mstns:action_no" />
+    </xs:unique>
+    <xs:unique name="mt_monster_element_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:mt_monster_element" />
+      <xs:field xpath="mstns:monster_id" />
+      <xs:field xpath="mstns:atkordfe" />
+    </xs:unique>
+    <xs:unique name="mt_monster_list_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:mt_monster_list" />
+      <xs:field xpath="mstns:monster_id" />
+    </xs:unique>
+    <xs:unique name="mt_monster_have_item_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:mt_monster_have_item" />
+      <xs:field xpath="mstns:monster_id" />
+      <xs:field xpath="mstns:drop_type" />
+      <xs:field xpath="mstns:get_synx" />
+    </xs:unique>
+    <xs:unique name="mt_monster_battle_ability_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:mt_monster_battle_ability" />
+      <xs:field xpath="mstns:monster_id" />
+      <xs:field xpath="mstns:level" />
+    </xs:unique>
+    <xs:unique name="mt_monster_serif_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:mt_monster_serif" />
+      <xs:field xpath="mstns:monster_id" />
+      <xs:field xpath="mstns:serif_no" />
+      <xs:field xpath="mstns:situation" />
+      <xs:field xpath="mstns:perks_id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

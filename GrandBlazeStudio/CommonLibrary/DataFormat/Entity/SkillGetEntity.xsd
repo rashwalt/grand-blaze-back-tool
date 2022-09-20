@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SkillGetEntity" targetNamespace="http://tempuri.org/SkillGetEntity.xsd" xmlns:mstns="http://tempuri.org/SkillGetEntity.xsd" xmlns="http://tempuri.org/SkillGetEntity.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="2" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="gbdbConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="gbdbConnectionString (Settings)" PropertyReference="ApplicationSettings.CommonLibrary.CommonProperty.Properties.Settings.GlobalReference.Default.gbdbConnectionString" Provider="System.Data.OleDb" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="GrandBlazeMasterConnectionString1" IsAppSettingsProperty="true" Modifier="Assembly" Name="GrandBlazeMasterConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.CommonLibrary.CommonProperty.Properties.Settings.GlobalReference.Default.GrandBlazeMasterConnectionString1" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="GrandBlazeMasterConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="GrandBlazeMasterConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.CommonLibrary.Properties.Settings.GlobalReference.Default.GrandBlazeMasterConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SkillGetEntity" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="SkillGetEntity" msprop:Generator_UserDSName="SkillGetEntity">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="mt_skill_get_list" msprop:Generator_UserTableName="mt_skill_get_list" msprop:Generator_RowEvArgName="mt_skill_get_listRowChangeEvent" msprop:Generator_TableVarName="tablemt_skill_get_list" msprop:Generator_TablePropName="mt_skill_get_list" msprop:Generator_RowDeletingName="mt_skill_get_listRowDeleting" msprop:Generator_RowChangingName="mt_skill_get_listRowChanging" msprop:Generator_RowDeletedName="mt_skill_get_listRowDeleted" msprop:Generator_RowEvHandlerName="mt_skill_get_listRowChangeEventHandler" msprop:Generator_TableClassName="mt_skill_get_listDataTable" msprop:Generator_RowChangedName="mt_skill_get_listRowChanged" msprop:Generator_RowClassName="mt_skill_get_listRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="perks_id" msprop:Generator_ColumnVarNameInTable="columnperks_id" msprop:Generator_ColumnPropNameInRow="perks_id" msprop:Generator_ColumnPropNameInTable="perks_idColumn" msprop:Generator_UserColumnName="perks_id" type="xs:int" />
+              <xs:element name="tm_install" msprop:Generator_ColumnVarNameInTable="columntm_install" msprop:Generator_ColumnPropNameInRow="tm_install" msprop:Generator_ColumnPropNameInTable="tm_installColumn" msprop:Generator_UserColumnName="tm_install" type="xs:int" minOccurs="0" />
+              <xs:element name="tm_install_level" msprop:Generator_ColumnVarNameInTable="columntm_install_level" msprop:Generator_ColumnPropNameInRow="tm_install_level" msprop:Generator_ColumnPropNameInTable="tm_install_levelColumn" msprop:Generator_UserColumnName="tm_install_level" type="xs:int" minOccurs="0" />
+              <xs:element name="tm_level" msprop:Generator_ColumnVarNameInTable="columntm_level" msprop:Generator_ColumnPropNameInRow="tm_level" msprop:Generator_ColumnPropNameInTable="tm_levelColumn" msprop:Generator_UserColumnName="tm_level" type="xs:int" minOccurs="0" />
+              <xs:element name="tm_str" msprop:Generator_ColumnVarNameInTable="columntm_str" msprop:Generator_ColumnPropNameInRow="tm_str" msprop:Generator_ColumnPropNameInTable="tm_strColumn" msprop:Generator_UserColumnName="tm_str" type="xs:int" minOccurs="0" />
+              <xs:element name="tm_agi" msprop:Generator_ColumnVarNameInTable="columntm_agi" msprop:Generator_ColumnPropNameInRow="tm_agi" msprop:Generator_ColumnPropNameInTable="tm_agiColumn" msprop:Generator_UserColumnName="tm_agi" type="xs:int" minOccurs="0" />
+              <xs:element name="tm_mag" msprop:Generator_ColumnVarNameInTable="columntm_mag" msprop:Generator_ColumnPropNameInRow="tm_mag" msprop:Generator_ColumnPropNameInTable="tm_magColumn" msprop:Generator_UserColumnName="tm_mag" type="xs:int" minOccurs="0" />
+              <xs:element name="tm_unq" msprop:Generator_ColumnVarNameInTable="columntm_unq" msprop:Generator_ColumnPropNameInRow="tm_unq" msprop:Generator_ColumnPropNameInTable="tm_unqColumn" msprop:Generator_UserColumnName="tm_unq" type="xs:int" minOccurs="0" />
+              <xs:element name="tm_race" msprop:Generator_ColumnVarNameInTable="columntm_race" msprop:Generator_ColumnPropNameInRow="tm_race" msprop:Generator_ColumnPropNameInTable="tm_raceColumn" msprop:Generator_UserColumnName="tm_race" type="xs:int" minOccurs="0" />
+              <xs:element name="tm_guardian" msprop:Generator_ColumnVarNameInTable="columntm_guardian" msprop:Generator_ColumnPropNameInRow="tm_guardian" msprop:Generator_ColumnPropNameInTable="tm_guardianColumn" msprop:Generator_UserColumnName="tm_guardian" type="xs:int" minOccurs="0" />
+              <xs:element name="tm_base_skill" msprop:Generator_ColumnVarNameInTable="columntm_base_skill" msprop:Generator_ColumnPropNameInRow="tm_base_skill" msprop:Generator_ColumnPropNameInTable="tm_base_skillColumn" msprop:Generator_UserColumnName="tm_base_skill" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:mt_skill_get_list" />
+      <xs:field xpath="mstns:perks_id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

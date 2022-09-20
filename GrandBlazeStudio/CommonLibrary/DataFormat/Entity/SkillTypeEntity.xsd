@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SkillTypeEntity" targetNamespace="http://tempuri.org/SkillTypeEntity.xsd" xmlns:mstns="http://tempuri.org/SkillTypeEntity.xsd" xmlns="http://tempuri.org/SkillTypeEntity.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="GrandBlazeMasterConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="GrandBlazeMasterConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.CommonLibrary.Properties.Settings.GlobalReference.Default.GrandBlazeMasterConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SkillTypeEntity" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="SkillTypeEntity" msprop:Generator_DataSetName="SkillTypeEntity" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="mt_skill_category" msprop:Generator_UserTableName="mt_skill_category" msprop:Generator_RowDeletedName="mt_skill_categoryRowDeleted" msprop:Generator_RowChangedName="mt_skill_categoryRowChanged" msprop:Generator_RowClassName="mt_skill_categoryRow" msprop:Generator_RowChangingName="mt_skill_categoryRowChanging" msprop:Generator_RowEvArgName="mt_skill_categoryRowChangeEvent" msprop:Generator_RowEvHandlerName="mt_skill_categoryRowChangeEventHandler" msprop:Generator_TableClassName="mt_skill_categoryDataTable" msprop:Generator_TableVarName="tablemt_skill_category" msprop:Generator_RowDeletingName="mt_skill_categoryRowDeleting" msprop:Generator_TablePropName="mt_skill_category">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="category_id" msprop:Generator_UserColumnName="category_id" msprop:Generator_ColumnPropNameInRow="category_id" msprop:Generator_ColumnVarNameInTable="columncategory_id" msprop:Generator_ColumnPropNameInTable="category_idColumn" type="xs:int" />
+              <xs:element name="category_name" msprop:Generator_UserColumnName="category_name" msprop:Generator_ColumnPropNameInRow="category_name" msprop:Generator_ColumnVarNameInTable="columncategory_name" msprop:Generator_ColumnPropNameInTable="category_nameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="type_id" msprop:Generator_UserColumnName="type_id" msprop:Generator_ColumnPropNameInRow="type_id" msprop:Generator_ColumnVarNameInTable="columntype_id" msprop:Generator_ColumnPropNameInTable="type_idColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:mt_skill_category" />
+      <xs:field xpath="mstns:category_id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TrapDataEntity" targetNamespace="http://tempuri.org/TrapDataEntity.xsd" xmlns:mstns="http://tempuri.org/TrapDataEntity.xsd" xmlns="http://tempuri.org/TrapDataEntity.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="GrandBlazeMasterConnectionString1" IsAppSettingsProperty="true" Modifier="Assembly" Name="GrandBlazeMasterConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.CommonLibrary.Properties.Settings.GlobalReference.Default.GrandBlazeMasterConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TrapDataEntity" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="TrapDataEntity" msprop:Generator_DataSetName="TrapDataEntity" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="mt_trap_list" msprop:Generator_UserTableName="mt_trap_list" msprop:Generator_RowDeletedName="mt_trap_listRowDeleted" msprop:Generator_RowChangedName="mt_trap_listRowChanged" msprop:Generator_RowClassName="mt_trap_listRow" msprop:Generator_RowChangingName="mt_trap_listRowChanging" msprop:Generator_RowEvArgName="mt_trap_listRowChangeEvent" msprop:Generator_RowEvHandlerName="mt_trap_listRowChangeEventHandler" msprop:Generator_TableClassName="mt_trap_listDataTable" msprop:Generator_TableVarName="tablemt_trap_list" msprop:Generator_RowDeletingName="mt_trap_listRowDeleting" msprop:Generator_TablePropName="mt_trap_list">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="trap_id" msprop:Generator_UserColumnName="trap_id" msprop:Generator_ColumnVarNameInTable="columntrap_id" msprop:Generator_ColumnPropNameInRow="trap_id" msprop:Generator_ColumnPropNameInTable="trap_idColumn" type="xs:int" />
+              <xs:element name="trap_name" msprop:Generator_UserColumnName="trap_name" msprop:Generator_ColumnVarNameInTable="columntrap_name" msprop:Generator_ColumnPropNameInRow="trap_name" msprop:Generator_ColumnPropNameInTable="trap_nameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="hp_damage" msprop:Generator_UserColumnName="hp_damage" msprop:Generator_ColumnVarNameInTable="columnhp_damage" msprop:Generator_ColumnPropNameInRow="hp_damage" msprop:Generator_ColumnPropNameInTable="hp_damageColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="mp_damage" msprop:Generator_UserColumnName="mp_damage" msprop:Generator_ColumnVarNameInTable="columnmp_damage" msprop:Generator_ColumnPropNameInRow="mp_damage" msprop:Generator_ColumnPropNameInTable="mp_damageColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="effect" msprop:Generator_UserColumnName="effect" msprop:Generator_ColumnVarNameInTable="columneffect" msprop:Generator_ColumnPropNameInRow="effect" msprop:Generator_ColumnPropNameInTable="effectColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:mt_trap_list" />
+      <xs:field xpath="mstns:trap_id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

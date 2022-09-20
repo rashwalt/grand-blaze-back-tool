@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="EffectEntity" targetNamespace="http://tempuri.org/EffectEntity.xsd" xmlns:mstns="http://tempuri.org/EffectEntity.xsd" xmlns="http://tempuri.org/EffectEntity.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="EffectEntity" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="EffectEntity" msprop:Generator_DataSetName="EffectEntity">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="mt_effect_list" msprop:Generator_UserTableName="mt_effect_list" msprop:Generator_RowDeletedName="mt_effect_listRowDeleted" msprop:Generator_RowChangedName="mt_effect_listRowChanged" msprop:Generator_RowClassName="mt_effect_listRow" msprop:Generator_RowChangingName="mt_effect_listRowChanging" msprop:Generator_RowEvArgName="mt_effect_listRowChangeEvent" msprop:Generator_RowEvHandlerName="mt_effect_listRowChangeEventHandler" msprop:Generator_TableClassName="mt_effect_listDataTable" msprop:Generator_TableVarName="tablemt_effect_list" msprop:Generator_RowDeletingName="mt_effect_listRowDeleting" msprop:Generator_TablePropName="mt_effect_list">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="effect_id" msprop:Generator_UserColumnName="effect_id" msprop:Generator_ColumnPropNameInRow="effect_id" msprop:Generator_ColumnVarNameInTable="columneffect_id" msprop:Generator_ColumnPropNameInTable="effect_idColumn" type="xs:int" />
+              <xs:element name="ef_name" msprop:Generator_UserColumnName="ef_name" msprop:Generator_ColumnPropNameInRow="ef_name" msprop:Generator_ColumnVarNameInTable="columnef_name" msprop:Generator_ColumnPropNameInTable="ef_nameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ef_memo" msprop:Generator_UserColumnName="ef_memo" msprop:Generator_ColumnPropNameInRow="ef_memo" msprop:Generator_ColumnVarNameInTable="columnef_memo" msprop:Generator_ColumnPropNameInTable="ef_memoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ef_viewname" msprop:Generator_UserColumnName="ef_viewname" msprop:Generator_ColumnPropNameInRow="ef_viewname" msprop:Generator_ColumnVarNameInTable="columnef_viewname" msprop:Generator_ColumnPropNameInTable="ef_viewnameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="rank_min" msprop:Generator_UserColumnName="rank_min" msprop:Generator_ColumnPropNameInRow="rank_min" msprop:Generator_ColumnVarNameInTable="columnrank_min" msprop:Generator_ColumnPropNameInTable="rank_minColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="rank_max" msprop:Generator_UserColumnName="rank_max" msprop:Generator_ColumnPropNameInRow="rank_max" msprop:Generator_ColumnVarNameInTable="columnrank_max" msprop:Generator_ColumnPropNameInTable="rank_maxColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="rank_default" msprop:Generator_UserColumnName="rank_default" msprop:Generator_ColumnPropNameInRow="rank_default" msprop:Generator_ColumnVarNameInTable="columnrank_default" msprop:Generator_ColumnPropNameInTable="rank_defaultColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="rank_fix" msprop:Generator_UserColumnName="rank_fix" msprop:Generator_ColumnPropNameInRow="rank_fix" msprop:Generator_ColumnVarNameInTable="columnrank_fix" msprop:Generator_ColumnPropNameInTable="rank_fixColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="sub_rank_min" msprop:Generator_UserColumnName="sub_rank_min" msprop:Generator_ColumnPropNameInRow="sub_rank_min" msprop:Generator_ColumnVarNameInTable="columnsub_rank_min" msprop:Generator_ColumnPropNameInTable="sub_rank_minColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="sub_rank_max" msprop:Generator_UserColumnName="sub_rank_max" msprop:Generator_ColumnPropNameInRow="sub_rank_max" msprop:Generator_ColumnVarNameInTable="columnsub_rank_max" msprop:Generator_ColumnPropNameInTable="sub_rank_maxColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="sub_rank_default" msprop:Generator_UserColumnName="sub_rank_default" msprop:Generator_ColumnPropNameInRow="sub_rank_default" msprop:Generator_ColumnVarNameInTable="columnsub_rank_default" msprop:Generator_ColumnPropNameInTable="sub_rank_defaultColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="sub_rank_fix" msprop:Generator_UserColumnName="sub_rank_fix" msprop:Generator_ColumnPropNameInRow="sub_rank_fix" msprop:Generator_ColumnVarNameInTable="columnsub_rank_fix" msprop:Generator_ColumnPropNameInTable="sub_rank_fixColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="prob_min" msprop:Generator_UserColumnName="prob_min" msprop:Generator_ColumnPropNameInRow="prob_min" msprop:Generator_ColumnVarNameInTable="columnprob_min" msprop:Generator_ColumnPropNameInTable="prob_minColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="prob_max" msprop:Generator_UserColumnName="prob_max" msprop:Generator_ColumnPropNameInRow="prob_max" msprop:Generator_ColumnVarNameInTable="columnprob_max" msprop:Generator_ColumnPropNameInTable="prob_maxColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="prob_default" msprop:Generator_UserColumnName="prob_default" msprop:Generator_ColumnPropNameInRow="prob_default" msprop:Generator_ColumnVarNameInTable="columnprob_default" msprop:Generator_ColumnPropNameInTable="prob_defaultColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="prob_fix" msprop:Generator_UserColumnName="prob_fix" msprop:Generator_ColumnPropNameInRow="prob_fix" msprop:Generator_ColumnVarNameInTable="columnprob_fix" msprop:Generator_ColumnPropNameInTable="prob_fixColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="limit_min" msprop:Generator_UserColumnName="limit_min" msprop:Generator_ColumnPropNameInRow="limit_min" msprop:Generator_ColumnVarNameInTable="columnlimit_min" msprop:Generator_ColumnPropNameInTable="limit_minColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="limit_max" msprop:Generator_UserColumnName="limit_max" msprop:Generator_ColumnPropNameInRow="limit_max" msprop:Generator_ColumnVarNameInTable="columnlimit_max" msprop:Generator_ColumnPropNameInTable="limit_maxColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="limit_default" msprop:Generator_UserColumnName="limit_default" msprop:Generator_ColumnPropNameInRow="limit_default" msprop:Generator_ColumnVarNameInTable="columnlimit_default" msprop:Generator_ColumnPropNameInTable="limit_defaultColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="limit_fix" msprop:Generator_UserColumnName="limit_fix" msprop:Generator_ColumnPropNameInRow="limit_fix" msprop:Generator_ColumnVarNameInTable="columnlimit_fix" msprop:Generator_ColumnPropNameInTable="limit_fixColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:mt_effect_list" />
+      <xs:field xpath="mstns:effect_id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,872 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1E1A83B5-EA45-421A-87C9-AC197BCC7C37}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CommonLibrary</RootNamespace>
+    <AssemblyName>CommonLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\GrandBlazeStudio\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IronPython, Version=2.7.0.40, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\IronPython.dll</HintPath>
+    </Reference>
+    <Reference Include="IronPython.Modules, Version=2.7.0.40, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\IronPython.Modules.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Dynamic">
+      <HintPath>.\Microsoft.Dynamic.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Scripting">
+      <HintPath>.\Microsoft.Scripting.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MySql.Data, Version=6.5.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Program Files (x86)\MySQL\MySQL Connector Net 6.5.4\Assemblies\v4.0\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Character\LibCharacterExtension.cs" />
+    <Compile Include="Character\LibGuest.cs" />
+    <Compile Include="Character\LibGuest.Header.cs">
+      <DependentUpon>LibGuest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Character\LibMonster.cs" />
+    <Compile Include="Character\LibMonster.Header.cs">
+      <DependentUpon>LibMonster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Character\LibPlayer.cs" />
+    <Compile Include="Character\LibPlayer.Header.cs">
+      <DependentUpon>LibPlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Character\LibPlayer.ItemSettings.cs">
+      <DependentUpon>LibPlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Character\LibPlayer.PerksSettings.cs">
+      <DependentUpon>LibPlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Character\LibPlayer.PrivateActions.cs">
+      <DependentUpon>LibPlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Character\LibUnitBase.cs" />
+    <Compile Include="DataAccess\LibDBBackup.cs" />
+    <Compile Include="DataAccess\LibDBLocal.cs" />
+    <Compile Include="DataAccess\LibDBWebServer.cs" />
+    <Compile Include="DataFormat\Entity\ActionDataEntity.Designer.cs">
+      <DependentUpon>ActionDataEntity.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataFormat\Entity\AreaMarkEntity.Designer.cs">
+      <DependentUpon>AreaMarkEntity.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataFormat\Entity\BattleResultEntity.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BattleResultEntity.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataFormat\Entity\CharacterDataEntity.Designer.cs">
+      <DependentUpon>CharacterDataEntity.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataFormat\Entity\CommonItemEntity.Designer.cs">
+      <DependentUpon>CommonItemEntity.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataFormat\Entity\CommonSkillEntity.Designer.cs">
+      <DependentUpon>CommonSkillEntity.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataFormat\Entity\ContinueDataEntity.Designer.cs">
+      <DependentUpon>ContinueDataEntity.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataFormat\Entity\DeletePlayerEntity.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DeletePlayerEntity.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataFormat\Entity\EffectEntity.Designer.cs">
+      <DependentUpon>EffectEntity.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataFormat\Entity\EffectListEntity.Designer.cs">
+      <DependentUpon>EffectListEntity.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataFormat\Entity\FieldDataEntity.Designer.cs">
+      <DependentUpon>FieldDataEntity.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataFormat\Entity\GuestDataEntity.Designer.cs">
+      <DependentUpon>GuestDataEntity.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataFormat\Entity\HumanRaceEntity.Designer.cs">
+      <DependentUpon>HumanRaceEntity.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataFormat\Entity\InstallDataEntity.Designer.cs">
+      <DependentUpon>InstallDataEntity.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataFormat\Entity\ItemCreationEntity.Designer.cs">
+      <DependentUpon>ItemCreationEntity.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataFormat\Entity\ItemTypeEntity.Designer.cs">
+      <DependentUpon>ItemTypeEntity.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataFormat\Entity\KeyItemEntity.Designer.cs">
+      <DependentUpon>KeyItemEntity.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataFormat\Entity\MaterialListEntity.Designer.cs">
+      <DependentUpon>MaterialListEntity.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataFormat\Entity\MonsterDataEntity.Designer.cs">
+      <DependentUpon>MonsterDataEntity.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataFormat\Entity\NewGamerEntity.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NewGamerEntity.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataFormat\Entity\PartySettingEntity.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PartySettingEntity.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataFormat\Entity\QuestMarkWeatherEntity.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuestMarkWeatherEntity.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataFormat\Entity\SelledTreasureEntity.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SelledTreasureEntity.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataFormat\Entity\SkillGetEntity.Designer.cs">
+      <DependentUpon>SkillGetEntity.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataFormat\Entity\SkillTypeEntity.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SkillTypeEntity.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataFormat\Entity\PlayerMemoEntity.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PlayerMemoEntity.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataFormat\Entity\QuestDataEntity.Designer.cs">
+      <DependentUpon>QuestDataEntity.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataFormat\Entity\RankDataEntity.Designer.cs">
+      <DependentUpon>RankDataEntity.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataFormat\Entity\SetBonusEntity.Designer.cs">
+      <DependentUpon>SetBonusEntity.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataFormat\Entity\SituationDataEntity.Designer.cs">
+      <DependentUpon>SituationDataEntity.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataFormat\Entity\StatusListEntity.Designer.cs">
+      <DependentUpon>StatusListEntity.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataFormat\Entity\TechniqueDataEntity.Designer.cs">
+      <DependentUpon>TechniqueDataEntity.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataFormat\Entity\TrapDataEntity.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TrapDataEntity.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataFormat\Entity\WeatherDataEntity.Designer.cs">
+      <DependentUpon>WeatherDataEntity.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataFormat\Format\BattleScore.cs" />
+    <Compile Include="DataFormat\Format\Elemental.cs" />
+    <Compile Include="DataFormat\Format\ItemList.cs" />
+    <Compile Include="DataFormat\Format\ItemProbList.cs" />
+    <Compile Include="DataFormat\Format\ItemSelectNames.cs" />
+    <Compile Include="DataFormat\Format\WeaponAbility.cs" />
+    <Compile Include="DataFormat\SpecialEntity\SkillTermEntity.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SkillTermEntity.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Integer\MersenneTwister.cs" />
+    <Compile Include="LibAction.cs" />
+    <Compile Include="LibActionType.cs" />
+    <Compile Include="LibArea.cs" />
+    <Compile Include="LibBattleCharacter.cs" />
+    <Compile Include="LibBattleResult.cs" />
+    <Compile Include="LibChain.cs" />
+    <Compile Include="LibCommonLibrarySettings.cs" />
+    <Compile Include="LibGuestData.cs" />
+    <Compile Include="LibPlayerMemo.cs" />
+    <Compile Include="LibComment.cs" />
+    <Compile Include="LibConst.cs" />
+    <Compile Include="LibContinue.cs" />
+    <Compile Include="LibEffect.cs" />
+    <Compile Include="LibExperience.cs" />
+    <Compile Include="LibField.cs" />
+    <Compile Include="LibGuardian.cs" />
+    <Compile Include="LibHate.cs" />
+    <Compile Include="LibHateRow.cs" />
+    <Compile Include="LibInstall.cs" />
+    <Compile Include="LibInteger.cs" />
+    <Compile Include="LibItem.cs" />
+    <Compile Include="LibItemType.cs" />
+    <Compile Include="LibKeyItem.cs" />
+    <Compile Include="LibList.cs" />
+    <Compile Include="LibMessage.cs" />
+    <Compile Include="LibMonsterData.cs" />
+    <Compile Include="LibParty.cs" />
+    <Compile Include="LibPartyAction.cs" />
+    <Compile Include="LibPartyBattleSet.cs" />
+    <Compile Include="LibScript.cs" />
+    <Compile Include="LibSelledTreasure.cs" />
+    <Compile Include="LibSkill.cs" />
+    <Compile Include="LibSkillType.cs" />
+    <Compile Include="LibPrivateAction.cs" />
+    <Compile Include="LibQuest.cs" />
+    <Compile Include="LibRace.cs" />
+    <Compile Include="LibRankData.cs" />
+    <Compile Include="LibResultText.cs" />
+    <Compile Include="LibSerif.cs" />
+    <Compile Include="LibSetBonus.cs" />
+    <Compile Include="LibSituation.cs" />
+    <Compile Include="LibSql.cs" />
+    <Compile Include="LibStatus.cs" />
+    <Compile Include="LibStatusList.cs" />
+    <Compile Include="LibTrap.cs" />
+    <Compile Include="LibUnitBaseMini.cs" />
+    <Compile Include="LibUtil.cs" />
+    <Compile Include="LibWeather.cs" />
+    <Compile Include="Private\LibBazzer.cs" />
+    <Compile Include="Private\LibShop.cs" />
+    <Compile Include="Private\LibTrade.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DataFormat\SpecialEntity\CharacterStatusListEntity.Designer.cs">
+      <DependentUpon>CharacterStatusListEntity.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataFormat\SpecialEntity\CommonUnitDataEntity.Designer.cs">
+      <DependentUpon>CommonUnitDataEntity.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataFormat\SpecialEntity\ItemTypeCategoryEntity.Designer.cs">
+      <DependentUpon>ItemTypeCategoryEntity.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataFormat\SpecialEntity\MovingListEntity.Designer.cs">
+      <DependentUpon>MovingListEntity.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataFormat\SpecialEntity\ReinforceEntity.Designer.cs">
+      <DependentUpon>ReinforceEntity.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Script\ScCheck.cs" />
+    <Compile Include="Script\ScGet.cs" />
+    <Compile Include="Script\ScName.cs" />
+    <Compile Include="Script\ScUtil.cs" />
+    <Compile Include="Status.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataFormat\Entity\ActionDataEntity.xsc">
+      <DependentUpon>ActionDataEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\ActionDataEntity.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ActionDataEntity.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataFormat\Entity\ActionDataEntity.xss">
+      <DependentUpon>ActionDataEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\AreaMarkEntity.xsc">
+      <DependentUpon>AreaMarkEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\AreaMarkEntity.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AreaMarkEntity.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataFormat\Entity\AreaMarkEntity.xss">
+      <DependentUpon>AreaMarkEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\BattleResultEntity.xsc">
+      <DependentUpon>BattleResultEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\BattleResultEntity.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BattleResultEntity.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataFormat\Entity\BattleResultEntity.xss">
+      <DependentUpon>BattleResultEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\CharacterDataEntity.xsc">
+      <DependentUpon>CharacterDataEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\CharacterDataEntity.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CharacterDataEntity.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataFormat\Entity\CharacterDataEntity.xss">
+      <DependentUpon>CharacterDataEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\CommonItemEntity.xsc">
+      <DependentUpon>CommonItemEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\CommonItemEntity.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CommonItemEntity.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataFormat\Entity\CommonItemEntity.xss">
+      <DependentUpon>CommonItemEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\CommonSkillEntity.xsc">
+      <DependentUpon>CommonSkillEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\CommonSkillEntity.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CommonSkillEntity.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataFormat\Entity\CommonSkillEntity.xss">
+      <DependentUpon>CommonSkillEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\ContinueDataEntity.xsc">
+      <DependentUpon>ContinueDataEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\ContinueDataEntity.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ContinueDataEntity.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataFormat\Entity\ContinueDataEntity.xss">
+      <DependentUpon>ContinueDataEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\DeletePlayerEntity.xsc">
+      <DependentUpon>DeletePlayerEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\DeletePlayerEntity.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DeletePlayerEntity.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataFormat\Entity\DeletePlayerEntity.xss">
+      <DependentUpon>DeletePlayerEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\EffectEntity.xsc">
+      <DependentUpon>EffectEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\EffectEntity.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EffectEntity.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataFormat\Entity\EffectEntity.xss">
+      <DependentUpon>EffectEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\EffectListEntity.xsc">
+      <DependentUpon>EffectListEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\EffectListEntity.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EffectListEntity.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataFormat\Entity\EffectListEntity.xss">
+      <DependentUpon>EffectListEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\FieldDataEntity.xsc">
+      <DependentUpon>FieldDataEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\FieldDataEntity.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FieldDataEntity.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataFormat\Entity\FieldDataEntity.xss">
+      <DependentUpon>FieldDataEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\GuestDataEntity.xsc">
+      <DependentUpon>GuestDataEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\GuestDataEntity.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GuestDataEntity.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataFormat\Entity\GuestDataEntity.xss">
+      <DependentUpon>GuestDataEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\HumanRaceEntity.xsc">
+      <DependentUpon>HumanRaceEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\HumanRaceEntity.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HumanRaceEntity.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataFormat\Entity\HumanRaceEntity.xss">
+      <DependentUpon>HumanRaceEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\InstallDataEntity.xsc">
+      <DependentUpon>InstallDataEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\InstallDataEntity.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InstallDataEntity.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataFormat\Entity\InstallDataEntity.xss">
+      <DependentUpon>InstallDataEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\ItemCreationEntity.xsc">
+      <DependentUpon>ItemCreationEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\ItemCreationEntity.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ItemCreationEntity.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataFormat\Entity\ItemCreationEntity.xss">
+      <DependentUpon>ItemCreationEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\ItemTypeEntity.xsc">
+      <DependentUpon>ItemTypeEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\ItemTypeEntity.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ItemTypeEntity.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataFormat\Entity\ItemTypeEntity.xss">
+      <DependentUpon>ItemTypeEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\KeyItemEntity.xsc">
+      <DependentUpon>KeyItemEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\KeyItemEntity.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KeyItemEntity.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataFormat\Entity\KeyItemEntity.xss">
+      <DependentUpon>KeyItemEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\MaterialListEntity.xsc">
+      <DependentUpon>MaterialListEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\MaterialListEntity.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MaterialListEntity.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataFormat\Entity\MaterialListEntity.xss">
+      <DependentUpon>MaterialListEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\MonsterDataEntity.xsc">
+      <DependentUpon>MonsterDataEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\MonsterDataEntity.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MonsterDataEntity.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataFormat\Entity\MonsterDataEntity.xss">
+      <DependentUpon>MonsterDataEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\NewGamerEntity.xsc">
+      <DependentUpon>NewGamerEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\NewGamerEntity.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NewGamerEntity.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataFormat\Entity\NewGamerEntity.xss">
+      <DependentUpon>NewGamerEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\PartySettingEntity.xsc">
+      <DependentUpon>PartySettingEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\PartySettingEntity.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PartySettingEntity.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataFormat\Entity\PartySettingEntity.xss">
+      <DependentUpon>PartySettingEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\QuestMarkWeatherEntity.xsc">
+      <DependentUpon>QuestMarkWeatherEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\QuestMarkWeatherEntity.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuestMarkWeatherEntity.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataFormat\Entity\QuestMarkWeatherEntity.xss">
+      <DependentUpon>QuestMarkWeatherEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\SelledTreasureEntity.xsc">
+      <DependentUpon>SelledTreasureEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\SelledTreasureEntity.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SelledTreasureEntity.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataFormat\Entity\SelledTreasureEntity.xss">
+      <DependentUpon>SelledTreasureEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\SkillGetEntity.xsc">
+      <DependentUpon>SkillGetEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\SkillGetEntity.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SkillGetEntity.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataFormat\Entity\SkillGetEntity.xss">
+      <DependentUpon>SkillGetEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\SkillTypeEntity.xsc">
+      <DependentUpon>SkillTypeEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\SkillTypeEntity.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SkillTypeEntity.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataFormat\Entity\SkillTypeEntity.xss">
+      <DependentUpon>SkillTypeEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\PlayerMemoEntity.xsc">
+      <DependentUpon>PlayerMemoEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\PlayerMemoEntity.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PlayerMemoEntity.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataFormat\Entity\PlayerMemoEntity.xss">
+      <DependentUpon>PlayerMemoEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\QuestDataEntity.xsc">
+      <DependentUpon>QuestDataEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\QuestDataEntity.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuestDataEntity.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataFormat\Entity\QuestDataEntity.xss">
+      <DependentUpon>QuestDataEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\RankDataEntity.xsc">
+      <DependentUpon>RankDataEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\RankDataEntity.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RankDataEntity.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataFormat\Entity\RankDataEntity.xss">
+      <DependentUpon>RankDataEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\SetBonusEntity.xsc">
+      <DependentUpon>SetBonusEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\SetBonusEntity.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SetBonusEntity.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataFormat\Entity\SetBonusEntity.xss">
+      <DependentUpon>SetBonusEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\SituationDataEntity.xsc">
+      <DependentUpon>SituationDataEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\SituationDataEntity.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SituationDataEntity.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataFormat\Entity\SituationDataEntity.xss">
+      <DependentUpon>SituationDataEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\StatusListEntity.xsc">
+      <DependentUpon>StatusListEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\StatusListEntity.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StatusListEntity.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataFormat\Entity\StatusListEntity.xss">
+      <DependentUpon>StatusListEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\TechniqueDataEntity.xsc">
+      <DependentUpon>TechniqueDataEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\TechniqueDataEntity.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TechniqueDataEntity.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataFormat\Entity\TechniqueDataEntity.xss">
+      <DependentUpon>TechniqueDataEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\TrapDataEntity.xsc">
+      <DependentUpon>TrapDataEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\TrapDataEntity.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TrapDataEntity.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataFormat\Entity\TrapDataEntity.xss">
+      <DependentUpon>TrapDataEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\WeatherDataEntity.xsc">
+      <DependentUpon>WeatherDataEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\Entity\WeatherDataEntity.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WeatherDataEntity.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataFormat\Entity\WeatherDataEntity.xss">
+      <DependentUpon>WeatherDataEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\SpecialEntity\CharacterStatusListEntity.xsc">
+      <DependentUpon>CharacterStatusListEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\SpecialEntity\CharacterStatusListEntity.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CharacterStatusListEntity.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataFormat\SpecialEntity\CharacterStatusListEntity.xss">
+      <DependentUpon>CharacterStatusListEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\SpecialEntity\CommonUnitDataEntity.xsc">
+      <DependentUpon>CommonUnitDataEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\SpecialEntity\CommonUnitDataEntity.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CommonUnitDataEntity.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataFormat\SpecialEntity\CommonUnitDataEntity.xss">
+      <DependentUpon>CommonUnitDataEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\SpecialEntity\ItemTypeCategoryEntity.xsc">
+      <DependentUpon>ItemTypeCategoryEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\SpecialEntity\ItemTypeCategoryEntity.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ItemTypeCategoryEntity.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataFormat\SpecialEntity\ItemTypeCategoryEntity.xss">
+      <DependentUpon>ItemTypeCategoryEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\SpecialEntity\MovingListEntity.xsc">
+      <DependentUpon>MovingListEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\SpecialEntity\MovingListEntity.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MovingListEntity.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataFormat\SpecialEntity\MovingListEntity.xss">
+      <DependentUpon>MovingListEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\SpecialEntity\SkillTermEntity.xsc">
+      <DependentUpon>SkillTermEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\SpecialEntity\SkillTermEntity.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SkillTermEntity.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataFormat\SpecialEntity\SkillTermEntity.xss">
+      <DependentUpon>SkillTermEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\SpecialEntity\ReinforceEntity.xsc">
+      <DependentUpon>ReinforceEntity.xsd</DependentUpon>
+    </None>
+    <None Include="DataFormat\SpecialEntity\ReinforceEntity.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReinforceEntity.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataFormat\SpecialEntity\ReinforceEntity.xss">
+      <DependentUpon>ReinforceEntity.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

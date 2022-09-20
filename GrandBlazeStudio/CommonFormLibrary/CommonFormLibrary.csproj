@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DBF95B40-9E49-488F-91D0-2ED4ECDDD3C6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CommonFormLibrary</RootNamespace>
+    <AssemblyName>CommonFormLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\GrandBlazeStudio\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Azuki, Version=1.4.6.37566, Culture=neutral, PublicKeyToken=46b77eb7f2d82aba, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Azuki.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseDialog.Designer.cs">
+      <DependentUpon>BaseDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm.Designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BasePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BasePanel.Designer.cs">
+      <DependentUpon>BasePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonDialog\EventSettingDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonDialog\EventSettingDialog.Designer.cs">
+      <DependentUpon>EventSettingDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonDialog\ItemSelectDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonDialog\ItemSelectDialog.Designer.cs">
+      <DependentUpon>ItemSelectDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonDialog\SelectionEffectDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonDialog\SelectionEffectDialog.Designer.cs">
+      <DependentUpon>SelectionEffectDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonDialog\SelectionItemDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonDialog\SelectionItemDialog.Designer.cs">
+      <DependentUpon>SelectionItemDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonDialog\SetNewNumberDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonDialog\SetNewNumberDialog.Designer.cs">
+      <DependentUpon>SetNewNumberDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonDialog\PerksSelectDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonDialog\PerksSelectDialog.Designer.cs">
+      <DependentUpon>PerksSelectDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonPanel\EffectSettingPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonPanel\EffectSettingPanel.Designer.cs">
+      <DependentUpon>EffectSettingPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonPanel\EventEditorPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonPanel\EventEditorPanel.Designer.cs">
+      <DependentUpon>EventEditorPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonPanel\ItemSelectionPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonPanel\ItemSelectionPanel.Designer.cs">
+      <DependentUpon>ItemSelectionPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonPanel\SelectionItemEventArgs.cs" />
+    <Compile Include="ListBaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListBaseForm.Designer.cs">
+      <DependentUpon>ListBaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListBasePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ListBasePanel.Designer.cs">
+      <DependentUpon>ListBasePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TreeBaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TreeBaseForm.Designer.cs">
+      <DependentUpon>TreeBaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TreeBasePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TreeBasePanel.Designer.cs">
+      <DependentUpon>TreeBasePanel.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BaseDialog.resx">
+      <DependentUpon>BaseDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BasePanel.resx">
+      <DependentUpon>BasePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonDialog\EventSettingDialog.resx">
+      <DependentUpon>EventSettingDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonDialog\ItemSelectDialog.resx">
+      <DependentUpon>ItemSelectDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonDialog\SelectionEffectDialog.resx">
+      <DependentUpon>SelectionEffectDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonDialog\SelectionItemDialog.resx">
+      <DependentUpon>SelectionItemDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonDialog\SetNewNumberDialog.resx">
+      <DependentUpon>SetNewNumberDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonDialog\PerksSelectDialog.resx">
+      <DependentUpon>PerksSelectDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonPanel\EffectSettingPanel.resx">
+      <DependentUpon>EffectSettingPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonPanel\EventEditorPanel.resx">
+      <DependentUpon>EventEditorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonPanel\ItemSelectionPanel.resx">
+      <DependentUpon>ItemSelectionPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListBaseForm.resx">
+      <DependentUpon>ListBaseForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListBasePanel.resx">
+      <DependentUpon>ListBasePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreeBaseForm.resx">
+      <DependentUpon>TreeBaseForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreeBasePanel.resx">
+      <DependentUpon>TreeBasePanel.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonLibrary\CommonLibrary.csproj">
+      <Project>{1E1A83B5-EA45-421A-87C9-AC197BCC7C37}</Project>
+      <Name>CommonLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

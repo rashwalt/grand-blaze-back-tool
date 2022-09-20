@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="QuestMarkWeatherEntity" targetNamespace="http://tempuri.org/QuestMarkWeatherEntity.xsd" xmlns:mstns="http://tempuri.org/QuestMarkWeatherEntity.xsd" xmlns="http://tempuri.org/QuestMarkWeatherEntity.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="QuestMarkWeatherEntity" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="QuestMarkWeatherEntity" msprop:Generator_UserDSName="QuestMarkWeatherEntity">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ts_mark_weather_schedule" msprop:Generator_TableClassName="ts_mark_weather_scheduleDataTable" msprop:Generator_TableVarName="tablets_mark_weather_schedule" msprop:Generator_TablePropName="ts_mark_weather_schedule" msprop:Generator_RowDeletingName="ts_mark_weather_scheduleRowDeleting" msprop:Generator_RowChangingName="ts_mark_weather_scheduleRowChanging" msprop:Generator_RowEvHandlerName="ts_mark_weather_scheduleRowChangeEventHandler" msprop:Generator_RowDeletedName="ts_mark_weather_scheduleRowDeleted" msprop:Generator_UserTableName="ts_mark_weather_schedule" msprop:Generator_RowChangedName="ts_mark_weather_scheduleRowChanged" msprop:Generator_RowEvArgName="ts_mark_weather_scheduleRowChangeEvent" msprop:Generator_RowClassName="ts_mark_weather_scheduleRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="mark_id" msprop:Generator_ColumnVarNameInTable="columnmark_id" msprop:Generator_ColumnPropNameInRow="mark_id" msprop:Generator_ColumnPropNameInTable="mark_idColumn" msprop:Generator_UserColumnName="mark_id" type="xs:int" />
+              <xs:element name="count_id" msprop:Generator_ColumnVarNameInTable="columncount_id" msprop:Generator_ColumnPropNameInRow="count_id" msprop:Generator_ColumnPropNameInTable="count_idColumn" msprop:Generator_UserColumnName="count_id" type="xs:int" />
+              <xs:element name="weather_id" msprop:Generator_ColumnVarNameInTable="columnweather_id" msprop:Generator_ColumnPropNameInRow="weather_id" msprop:Generator_ColumnPropNameInTable="weather_idColumn" msprop:Generator_UserColumnName="weather_id" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ts_mark_weather_schedule" />
+      <xs:field xpath="mstns:mark_id" />
+      <xs:field xpath="mstns:count_id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CommonSkillEntity" targetNamespace="http://tempuri.org/CommonSkillEntity.xsd" xmlns:mstns="http://tempuri.org/CommonSkillEntity.xsd" xmlns="http://tempuri.org/CommonSkillEntity.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="2" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="CommonSkillEntity" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="CommonSkillEntity" msprop:Generator_UserDSName="CommonSkillEntity">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="skill_list" msprop:Generator_UserTableName="skill_list" msprop:Generator_RowEvArgName="skill_listRowChangeEvent" msprop:Generator_TableVarName="tableskill_list" msprop:Generator_TablePropName="skill_list" msprop:Generator_RowDeletingName="skill_listRowDeleting" msprop:Generator_RowChangingName="skill_listRowChanging" msprop:Generator_RowDeletedName="skill_listRowDeleted" msprop:Generator_RowEvHandlerName="skill_listRowChangeEventHandler" msprop:Generator_RowChangedName="skill_listRowChanged" msprop:Generator_TableClassName="skill_listDataTable" msprop:Generator_RowClassName="skill_listRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="sk_id" msprop:Generator_ColumnVarNameInTable="columnsk_id" msprop:Generator_ColumnPropNameInRow="sk_id" msprop:Generator_ColumnPropNameInTable="sk_idColumn" msprop:Generator_UserColumnName="sk_id" type="xs:int" />
+              <xs:element name="sk_name" msprop:Generator_ColumnVarNameInTable="columnsk_name" msprop:Generator_ColumnPropNameInRow="sk_name" msprop:Generator_ColumnPropNameInTable="sk_nameColumn" msprop:Generator_UserColumnName="sk_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="sk_mp" msprop:Generator_ColumnVarNameInTable="columnsk_mp" msprop:Generator_ColumnPropNameInRow="sk_mp" msprop:Generator_ColumnPropNameInTable="sk_mpColumn" msprop:Generator_UserColumnName="sk_mp" type="xs:int" minOccurs="0" />
+              <xs:element name="sk_tp" msprop:Generator_ColumnVarNameInTable="columnsk_tp" msprop:Generator_ColumnPropNameInRow="sk_tp" msprop:Generator_ColumnPropNameInTable="sk_tpColumn" msprop:Generator_UserColumnName="sk_tp" type="xs:int" minOccurs="0" />
+              <xs:element name="sk_attack" msprop:Generator_ColumnVarNameInTable="columnsk_attack" msprop:Generator_ColumnPropNameInRow="sk_attack" msprop:Generator_ColumnPropNameInTable="sk_attackColumn" msprop:Generator_UserColumnName="sk_attack" type="xs:int" minOccurs="0" />
+              <xs:element name="sk_power" msprop:Generator_ColumnVarNameInTable="columnsk_power" msprop:Generator_ColumnPropNameInRow="sk_power" msprop:Generator_ColumnPropNameInTable="sk_powerColumn" msprop:Generator_UserColumnName="sk_power" type="xs:decimal" minOccurs="0" />
+              <xs:element name="sk_damage_rate" msprop:Generator_ColumnVarNameInTable="columnsk_damage_rate" msprop:Generator_ColumnPropNameInRow="sk_damage_rate" msprop:Generator_ColumnPropNameInTable="sk_damage_rateColumn" msprop:Generator_UserColumnName="sk_damage_rate" type="xs:decimal" minOccurs="0" />
+              <xs:element name="sk_plus_score" msprop:Generator_ColumnVarNameInTable="columnsk_plus_score" msprop:Generator_ColumnPropNameInRow="sk_plus_score" msprop:Generator_ColumnPropNameInTable="sk_plus_scoreColumn" msprop:Generator_UserColumnName="sk_plus_score" type="xs:int" minOccurs="0" />
+              <xs:element name="sk_hit" msprop:Generator_ColumnVarNameInTable="columnsk_hit" msprop:Generator_ColumnPropNameInRow="sk_hit" msprop:Generator_ColumnPropNameInTable="sk_hitColumn" msprop:Generator_UserColumnName="sk_hit" type="xs:int" minOccurs="0" />
+              <xs:element name="sk_critical" msprop:Generator_ColumnVarNameInTable="columnsk_critical" msprop:Generator_ColumnPropNameInRow="sk_critical" msprop:Generator_ColumnPropNameInTable="sk_criticalColumn" msprop:Generator_UserColumnName="sk_critical" type="xs:int" minOccurs="0" />
+              <xs:element name="sk_critical_type" msprop:Generator_ColumnVarNameInTable="columnsk_critical_type" msprop:Generator_ColumnPropNameInRow="sk_critical_type" msprop:Generator_ColumnPropNameInTable="sk_critical_typeColumn" msprop:Generator_UserColumnName="sk_critical_type" type="xs:int" minOccurs="0" />
+              <xs:element name="sk_round" msprop:Generator_ColumnVarNameInTable="columnsk_round" msprop:Generator_ColumnPropNameInRow="sk_round" msprop:Generator_ColumnPropNameInTable="sk_roundColumn" msprop:Generator_UserColumnName="sk_round" type="xs:int" minOccurs="0" />
+              <xs:element name="sk_range" msprop:Generator_ColumnVarNameInTable="columnsk_range" msprop:Generator_ColumnPropNameInRow="sk_range" msprop:Generator_ColumnPropNameInTable="sk_rangeColumn" msprop:Generator_UserColumnName="sk_range" type="xs:int" minOccurs="0" />
+              <xs:element name="sk_charge" msprop:Generator_ColumnVarNameInTable="columnsk_charge" msprop:Generator_ColumnPropNameInRow="sk_charge" msprop:Generator_ColumnPropNameInTable="sk_chargeColumn" msprop:Generator_UserColumnName="sk_charge" type="xs:int" minOccurs="0" />
+              <xs:element name="sk_hate" msprop:Generator_ColumnVarNameInTable="columnsk_hate" msprop:Generator_ColumnPropNameInRow="sk_hate" msprop:Generator_ColumnPropNameInTable="sk_hateColumn" msprop:Generator_UserColumnName="sk_hate" type="xs:int" minOccurs="0" />
+              <xs:element name="sk_vhate" msprop:Generator_ColumnVarNameInTable="columnsk_vhate" msprop:Generator_ColumnPropNameInRow="sk_vhate" msprop:Generator_ColumnPropNameInTable="sk_vhateColumn" msprop:Generator_UserColumnName="sk_vhate" type="xs:int" minOccurs="0" />
+              <xs:element name="sk_dhate" msprop:Generator_ColumnVarNameInTable="columnsk_dhate" msprop:Generator_ColumnPropNameInRow="sk_dhate" msprop:Generator_ColumnPropNameInTable="sk_dhateColumn" msprop:Generator_UserColumnName="sk_dhate" type="xs:int" minOccurs="0" />
+              <xs:element name="sk_antiair" msprop:Generator_ColumnVarNameInTable="columnsk_antiair" msprop:Generator_ColumnPropNameInRow="sk_antiair" msprop:Generator_ColumnPropNameInTable="sk_antiairColumn" msprop:Generator_UserColumnName="sk_antiair" type="xs:boolean" minOccurs="0" />
+              <xs:element name="sk_target_restrict" msprop:Generator_ColumnVarNameInTable="columnsk_target_restrict" msprop:Generator_ColumnPropNameInRow="sk_target_restrict" msprop:Generator_ColumnPropNameInTable="sk_target_restrictColumn" msprop:Generator_UserColumnName="sk_target_restrict" type="xs:int" minOccurs="0" />
+              <xs:element name="sk_use_limit" msprop:Generator_ColumnVarNameInTable="columnsk_use_limit" msprop:Generator_ColumnPropNameInRow="sk_use_limit" msprop:Generator_ColumnPropNameInTable="sk_use_limitColumn" msprop:Generator_UserColumnName="sk_use_limit" type="xs:int" minOccurs="0" />
+              <xs:element name="sk_fire" msprop:Generator_ColumnVarNameInTable="columnsk_fire" msprop:Generator_ColumnPropNameInRow="sk_fire" msprop:Generator_ColumnPropNameInTable="sk_fireColumn" msprop:Generator_UserColumnName="sk_fire" type="xs:int" minOccurs="0" />
+              <xs:element name="sk_freeze" msprop:Generator_ColumnVarNameInTable="columnsk_freeze" msprop:Generator_ColumnPropNameInRow="sk_freeze" msprop:Generator_ColumnPropNameInTable="sk_freezeColumn" msprop:Generator_UserColumnName="sk_freeze" type="xs:int" minOccurs="0" />
+              <xs:element name="sk_air" msprop:Generator_ColumnVarNameInTable="columnsk_air" msprop:Generator_ColumnPropNameInRow="sk_air" msprop:Generator_ColumnPropNameInTable="sk_airColumn" msprop:Generator_UserColumnName="sk_air" type="xs:int" minOccurs="0" />
+              <xs:element name="sk_earth" msprop:Generator_ColumnVarNameInTable="columnsk_earth" msprop:Generator_ColumnPropNameInRow="sk_earth" msprop:Generator_ColumnPropNameInTable="sk_earthColumn" msprop:Generator_UserColumnName="sk_earth" type="xs:int" minOccurs="0" />
+              <xs:element name="sk_water" msprop:Generator_ColumnVarNameInTable="columnsk_water" msprop:Generator_ColumnPropNameInRow="sk_water" msprop:Generator_ColumnPropNameInTable="sk_waterColumn" msprop:Generator_UserColumnName="sk_water" type="xs:int" minOccurs="0" />
+              <xs:element name="sk_thunder" msprop:Generator_ColumnVarNameInTable="columnsk_thunder" msprop:Generator_ColumnPropNameInRow="sk_thunder" msprop:Generator_ColumnPropNameInTable="sk_thunderColumn" msprop:Generator_UserColumnName="sk_thunder" type="xs:int" minOccurs="0" />
+              <xs:element name="sk_holy" msprop:Generator_ColumnVarNameInTable="columnsk_holy" msprop:Generator_ColumnPropNameInRow="sk_holy" msprop:Generator_ColumnPropNameInTable="sk_holyColumn" msprop:Generator_UserColumnName="sk_holy" type="xs:int" minOccurs="0" />
+              <xs:element name="sk_dark" msprop:Generator_ColumnVarNameInTable="columnsk_dark" msprop:Generator_ColumnPropNameInRow="sk_dark" msprop:Generator_ColumnPropNameInTable="sk_darkColumn" msprop:Generator_UserColumnName="sk_dark" type="xs:int" minOccurs="0" />
+              <xs:element name="sk_slash" msprop:Generator_ColumnVarNameInTable="columnsk_slash" msprop:Generator_ColumnPropNameInRow="sk_slash" msprop:Generator_ColumnPropNameInTable="sk_slashColumn" msprop:Generator_UserColumnName="sk_slash" type="xs:int" minOccurs="0" />
+              <xs:element name="sk_pierce" msprop:Generator_ColumnVarNameInTable="columnsk_pierce" msprop:Generator_ColumnPropNameInRow="sk_pierce" msprop:Generator_ColumnPropNameInTable="sk_pierceColumn" msprop:Generator_UserColumnName="sk_pierce" type="xs:int" minOccurs="0" />
+              <xs:element name="sk_strike" msprop:Generator_ColumnVarNameInTable="columnsk_strike" msprop:Generator_ColumnPropNameInRow="sk_strike" msprop:Generator_ColumnPropNameInTable="sk_strikeColumn" msprop:Generator_UserColumnName="sk_strike" type="xs:int" minOccurs="0" />
+              <xs:element name="sk_break" msprop:Generator_ColumnVarNameInTable="columnsk_break" msprop:Generator_ColumnPropNameInRow="sk_break" msprop:Generator_ColumnPropNameInTable="sk_breakColumn" msprop:Generator_UserColumnName="sk_break" type="xs:int" minOccurs="0" />
+              <xs:element name="sk_effect" msprop:Generator_ColumnVarNameInTable="columnsk_effect" msprop:Generator_ColumnPropNameInRow="sk_effect" msprop:Generator_ColumnPropNameInTable="sk_effectColumn" msprop:Generator_UserColumnName="sk_effect" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="sk_type" msprop:Generator_ColumnVarNameInTable="columnsk_type" msprop:Generator_ColumnPropNameInRow="sk_type" msprop:Generator_ColumnPropNameInTable="sk_typeColumn" msprop:Generator_UserColumnName="sk_type" type="xs:int" minOccurs="0" />
+              <xs:element name="sk_atype" msprop:Generator_ColumnVarNameInTable="columnsk_atype" msprop:Generator_ColumnPropNameInRow="sk_atype" msprop:Generator_ColumnPropNameInTable="sk_atypeColumn" msprop:Generator_UserColumnName="sk_atype" type="xs:int" minOccurs="0" />
+              <xs:element name="sk_damage_type" msprop:Generator_ColumnVarNameInTable="columnsk_damage_type" msprop:Generator_ColumnPropNameInRow="sk_damage_type" msprop:Generator_ColumnPropNameInTable="sk_damage_typeColumn" msprop:Generator_UserColumnName="sk_damage_type" type="xs:int" minOccurs="0" />
+              <xs:element name="sk_target_area" msprop:Generator_ColumnVarNameInTable="columnsk_target_area" msprop:Generator_ColumnPropNameInRow="sk_target_area" msprop:Generator_ColumnPropNameInTable="sk_target_areaColumn" msprop:Generator_UserColumnName="sk_target_area" type="xs:int" minOccurs="0" />
+              <xs:element name="sk_comment" msprop:Generator_ColumnVarNameInTable="columnsk_comment" msprop:Generator_ColumnPropNameInRow="sk_comment" msprop:Generator_ColumnPropNameInTable="sk_commentColumn" msprop:Generator_UserColumnName="sk_comment">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="sk_target_party" msprop:Generator_ColumnVarNameInTable="columnsk_target_party" msprop:Generator_ColumnPropNameInRow="sk_target_party" msprop:Generator_ColumnPropNameInTable="sk_target_partyColumn" msprop:Generator_UserColumnName="sk_target_party" type="xs:int" minOccurs="0" />
+              <xs:element name="sk_arts_category" msprop:Generator_ColumnVarNameInTable="columnsk_arts_category" msprop:Generator_ColumnPropNameInRow="sk_arts_category" msprop:Generator_ColumnPropNameInTable="sk_arts_categoryColumn" msprop:Generator_UserColumnName="sk_arts_category" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:skill_list" />
+      <xs:field xpath="mstns:sk_id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

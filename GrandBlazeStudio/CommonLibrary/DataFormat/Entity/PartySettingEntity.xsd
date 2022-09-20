@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PartySettingEntity" targetNamespace="http://tempuri.org/PartySettingEntity.xsd" xmlns:mstns="http://tempuri.org/PartySettingEntity.xsd" xmlns="http://tempuri.org/PartySettingEntity.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="GrandBlazeDataConnectionString1" IsAppSettingsProperty="true" Modifier="Assembly" Name="GrandBlazeDataConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.CommonLibrary.Properties.Settings.GlobalReference.Default.GrandBlazeDataConnectionString1" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="GrandBlazeDataConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="GrandBlazeDataConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.CommonLibrary.Properties.Settings.GlobalReference.Default.GrandBlazeDataConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PartySettingEntity" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="PartySettingEntity" msprop:Generator_UserDSName="PartySettingEntity">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="temp_party_system_message" msprop:Generator_UserTableName="temp_party_system_message" msprop:Generator_RowEvArgName="temp_party_system_messageRowChangeEvent" msprop:Generator_TableVarName="tabletemp_party_system_message" msprop:Generator_TablePropName="temp_party_system_message" msprop:Generator_RowDeletingName="temp_party_system_messageRowDeleting" msprop:Generator_RowChangingName="temp_party_system_messageRowChanging" msprop:Generator_RowDeletedName="temp_party_system_messageRowDeleted" msprop:Generator_RowEvHandlerName="temp_party_system_messageRowChangeEventHandler" msprop:Generator_RowChangedName="temp_party_system_messageRowChanged" msprop:Generator_TableClassName="temp_party_system_messageDataTable" msprop:Generator_RowClassName="temp_party_system_messageRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="party_no" msprop:Generator_ColumnVarNameInTable="columnparty_no" msprop:Generator_ColumnPropNameInRow="party_no" msprop:Generator_ColumnPropNameInTable="party_noColumn" msprop:Generator_UserColumnName="party_no" type="xs:int" />
+              <xs:element name="memo_type" msprop:Generator_ColumnVarNameInTable="columnmemo_type" msprop:Generator_ColumnPropNameInRow="memo_type" msprop:Generator_ColumnPropNameInTable="memo_typeColumn" msprop:Generator_UserColumnName="memo_type" type="xs:int" />
+              <xs:element name="memo_id" msprop:Generator_ColumnVarNameInTable="columnmemo_id" msprop:Generator_ColumnPropNameInRow="memo_id" msprop:Generator_ColumnPropNameInTable="memo_idColumn" msprop:Generator_UserColumnName="memo_id" type="xs:int" />
+              <xs:element name="memo" msprop:Generator_ColumnVarNameInTable="columnmemo" msprop:Generator_ColumnPropNameInRow="memo" msprop:Generator_ColumnPropNameInTable="memoColumn" msprop:Generator_UserColumnName="memo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="memo_level" msprop:Generator_ColumnVarNameInTable="columnmemo_level" msprop:Generator_ColumnPropNameInRow="memo_level" msprop:Generator_ColumnPropNameInTable="memo_levelColumn" msprop:Generator_UserColumnName="memo_level" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ts_character_belong_party" msprop:Generator_UserTableName="ts_character_belong_party" msprop:Generator_RowEvArgName="ts_character_belong_partyRowChangeEvent" msprop:Generator_TableVarName="tablets_character_belong_party" msprop:Generator_TablePropName="ts_character_belong_party" msprop:Generator_RowDeletingName="ts_character_belong_partyRowDeleting" msprop:Generator_RowChangingName="ts_character_belong_partyRowChanging" msprop:Generator_RowDeletedName="ts_character_belong_partyRowDeleted" msprop:Generator_RowEvHandlerName="ts_character_belong_partyRowChangeEventHandler" msprop:Generator_RowChangedName="ts_character_belong_partyRowChanged" msprop:Generator_TableClassName="ts_character_belong_partyDataTable" msprop:Generator_RowClassName="ts_character_belong_partyRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="entry_no" msprop:Generator_ColumnVarNameInTable="columnentry_no" msprop:Generator_ColumnPropNameInRow="entry_no" msprop:Generator_ColumnPropNameInTable="entry_noColumn" msprop:Generator_UserColumnName="entry_no" type="xs:int" />
+              <xs:element name="party_no" msprop:Generator_ColumnVarNameInTable="columnparty_no" msprop:Generator_ColumnPropNameInRow="party_no" msprop:Generator_ColumnPropNameInTable="party_noColumn" msprop:Generator_UserColumnName="party_no" type="xs:int" minOccurs="0" />
+              <xs:element name="reader" msprop:Generator_ColumnVarNameInTable="columnreader" msprop:Generator_ColumnPropNameInRow="reader" msprop:Generator_ColumnPropNameInTable="readerColumn" msprop:Generator_UserColumnName="reader" type="xs:boolean" />
+              <xs:element name="groom" msprop:Generator_ColumnVarNameInTable="columngroom" msprop:Generator_ColumnPropNameInRow="groom" msprop:Generator_ColumnPropNameInTable="groomColumn" msprop:Generator_UserColumnName="groom" type="xs:boolean" />
+              <xs:element name="bride" msprop:Generator_ColumnVarNameInTable="columnbride" msprop:Generator_ColumnPropNameInRow="bride" msprop:Generator_ColumnPropNameInTable="brideColumn" msprop:Generator_UserColumnName="bride" type="xs:boolean" />
+              <xs:element name="mark_id" msprop:Generator_ColumnVarNameInTable="columnmark_id" msprop:Generator_ColumnPropNameInRow="mark_id" msprop:Generator_ColumnPropNameInTable="mark_idColumn" msprop:Generator_UserColumnName="mark_id" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ts_party_list" msprop:Generator_UserTableName="ts_party_list" msprop:Generator_RowEvArgName="ts_party_listRowChangeEvent" msprop:Generator_TableVarName="tablets_party_list" msprop:Generator_TablePropName="ts_party_list" msprop:Generator_RowDeletingName="ts_party_listRowDeleting" msprop:Generator_RowChangingName="ts_party_listRowChanging" msprop:Generator_RowDeletedName="ts_party_listRowDeleted" msprop:Generator_RowEvHandlerName="ts_party_listRowChangeEventHandler" msprop:Generator_RowChangedName="ts_party_listRowChanged" msprop:Generator_TableClassName="ts_party_listDataTable" msprop:Generator_RowClassName="ts_party_listRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="party_no" msprop:Generator_ColumnVarNameInTable="columnparty_no" msprop:Generator_ColumnPropNameInRow="party_no" msprop:Generator_ColumnPropNameInTable="party_noColumn" msprop:Generator_UserColumnName="party_no" type="xs:int" />
+              <xs:element name="pt_name" msprop:Generator_ColumnVarNameInTable="columnpt_name" msprop:Generator_ColumnPropNameInRow="pt_name" msprop:Generator_ColumnPropNameInTable="pt_nameColumn" msprop:Generator_UserColumnName="pt_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="mark_id" msprop:Generator_ColumnVarNameInTable="columnmark_id" msprop:Generator_ColumnPropNameInRow="mark_id" msprop:Generator_ColumnPropNameInTable="mark_idColumn" msprop:Generator_UserColumnName="mark_id" type="xs:int" minOccurs="0" />
+              <xs:element name="wedding" msprop:Generator_ColumnVarNameInTable="columnwedding" msprop:Generator_ColumnPropNameInRow="wedding" msprop:Generator_ColumnPropNameInTable="weddingColumn" msprop:Generator_UserColumnName="wedding" type="xs:boolean" />
+              <xs:element name="temp" msprop:Generator_ColumnVarNameInTable="columntemp" msprop:Generator_ColumnPropNameInRow="temp" msprop:Generator_ColumnPropNameInTable="tempColumn" msprop:Generator_UserColumnName="temp" type="xs:boolean" />
+              <xs:element name="official_event" msprop:Generator_ColumnVarNameInTable="columnofficial_event" msprop:Generator_ColumnPropNameInRow="official_event" msprop:Generator_ColumnPropNameInTable="official_eventColumn" msprop:Generator_UserColumnName="official_event" type="xs:boolean" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:temp_party_system_message" />
+      <xs:field xpath="mstns:party_no" />
+      <xs:field xpath="mstns:memo_type" />
+      <xs:field xpath="mstns:memo_id" />
+    </xs:unique>
+    <xs:unique name="ts_character_belong_party_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ts_character_belong_party" />
+      <xs:field xpath="mstns:entry_no" />
+    </xs:unique>
+    <xs:unique name="ts_party_list_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ts_party_list" />
+      <xs:field xpath="mstns:party_no" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

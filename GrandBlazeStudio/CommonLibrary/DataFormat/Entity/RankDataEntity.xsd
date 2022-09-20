@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="RankDataEntity" targetNamespace="http://tempuri.org/RankDataEntity.xsd" xmlns:mstns="http://tempuri.org/RankDataEntity.xsd" xmlns="http://tempuri.org/RankDataEntity.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="gbdbConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="gbdbConnectionString (Settings)" PropertyReference="ApplicationSettings.CommonLibrary.CommonProperty.Properties.Settings.GlobalReference.Default.gbdbConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="RankDataEntity" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="RankDataEntity" msprop:Generator_DataSetName="RankDataEntity" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="mt_rank_list" msprop:Generator_UserTableName="mt_rank_list" msprop:Generator_RowDeletedName="mt_rank_listRowDeleted" msprop:Generator_RowChangedName="mt_rank_listRowChanged" msprop:Generator_RowClassName="mt_rank_listRow" msprop:Generator_RowChangingName="mt_rank_listRowChanging" msprop:Generator_RowEvArgName="mt_rank_listRowChangeEvent" msprop:Generator_RowEvHandlerName="mt_rank_listRowChangeEventHandler" msprop:Generator_TableClassName="mt_rank_listDataTable" msprop:Generator_TableVarName="tablemt_rank_list" msprop:Generator_RowDeletingName="mt_rank_listRowDeleting" msprop:Generator_TablePropName="mt_rank_list">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="rank_type" msprop:Generator_UserColumnName="rank_type" msprop:Generator_ColumnVarNameInTable="columnrank_type" msprop:Generator_ColumnPropNameInRow="rank_type" msprop:Generator_ColumnPropNameInTable="rank_typeColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="rank_level" msprop:Generator_UserColumnName="rank_level" msprop:Generator_ColumnVarNameInTable="columnrank_level" msprop:Generator_ColumnPropNameInRow="rank_level" msprop:Generator_ColumnPropNameInTable="rank_levelColumn" type="xs:int" />
+              <xs:element name="rank_number_a" msprop:Generator_UserColumnName="rank_number_a" msprop:Generator_ColumnVarNameInTable="columnrank_number_a" msprop:Generator_ColumnPropNameInRow="rank_number_a" msprop:Generator_ColumnPropNameInTable="rank_number_aColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="rank_number_b" msprop:Generator_UserColumnName="rank_number_b" msprop:Generator_ColumnVarNameInTable="columnrank_number_b" msprop:Generator_ColumnPropNameInRow="rank_number_b" msprop:Generator_ColumnPropNameInTable="rank_number_bColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:mt_rank_list" />
+      <xs:field xpath="mstns:rank_type" />
+      <xs:field xpath="mstns:rank_level" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

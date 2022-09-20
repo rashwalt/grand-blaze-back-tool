@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ItemTypeEntity" targetNamespace="http://tempuri.org/ItemTypeEntity.xsd" xmlns:mstns="http://tempuri.org/ItemTypeEntity.xsd" xmlns="http://tempuri.org/ItemTypeEntity.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="gbdbConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="gbdbConnectionString (Settings)" PropertyReference="ApplicationSettings.CommonLibrary.CommonProperty.Properties.Settings.GlobalReference.Default.gbdbConnectionString" Provider="System.Data.OleDb" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="GrandBlazeMasterConnectionString1" IsAppSettingsProperty="true" Modifier="Assembly" Name="GrandBlazeMasterConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.CommonLibrary.CommonProperty.Properties.Settings.GlobalReference.Default.GrandBlazeMasterConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ItemTypeEntity" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="ItemTypeEntity" msprop:Generator_UserDSName="ItemTypeEntity">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="mt_item_type" msprop:Generator_UserTableName="mt_item_type" msprop:Generator_RowEvArgName="mt_item_typeRowChangeEvent" msprop:Generator_TableVarName="tablemt_item_type" msprop:Generator_TablePropName="mt_item_type" msprop:Generator_RowDeletingName="mt_item_typeRowDeleting" msprop:Generator_RowChangingName="mt_item_typeRowChanging" msprop:Generator_RowDeletedName="mt_item_typeRowDeleted" msprop:Generator_RowEvHandlerName="mt_item_typeRowChangeEventHandler" msprop:Generator_RowChangedName="mt_item_typeRowChanged" msprop:Generator_TableClassName="mt_item_typeDataTable" msprop:Generator_RowClassName="mt_item_typeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="type_id" msprop:Generator_ColumnVarNameInTable="columntype_id" msprop:Generator_ColumnPropNameInRow="type_id" msprop:Generator_ColumnPropNameInTable="type_idColumn" msprop:Generator_UserColumnName="type_id" type="xs:int" />
+              <xs:element name="type" msprop:Generator_ColumnVarNameInTable="columntype" msprop:Generator_ColumnPropNameInRow="type" msprop:Generator_ColumnPropNameInTable="typeColumn" msprop:Generator_UserColumnName="type" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="equip_spot" msprop:Generator_ColumnVarNameInTable="columnequip_spot" msprop:Generator_ColumnPropNameInRow="equip_spot" msprop:Generator_ColumnPropNameInTable="equip_spotColumn" msprop:Generator_UserColumnName="equip_spot" type="xs:int" />
+              <xs:element name="use_item" msprop:Generator_ColumnVarNameInTable="columnuse_item" msprop:Generator_ColumnPropNameInRow="use_item" msprop:Generator_ColumnPropNameInTable="use_itemColumn" msprop:Generator_UserColumnName="use_item" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="both_hand" msprop:Generator_ColumnVarNameInTable="columnboth_hand" msprop:Generator_ColumnPropNameInRow="both_hand" msprop:Generator_ColumnPropNameInTable="both_handColumn" msprop:Generator_UserColumnName="both_hand" type="xs:boolean" />
+              <xs:element name="target_area" msprop:Generator_ColumnVarNameInTable="columntarget_area" msprop:Generator_ColumnPropNameInRow="target_area" msprop:Generator_ColumnPropNameInTable="target_areaColumn" msprop:Generator_UserColumnName="target_area" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="categ_div" msprop:Generator_ColumnVarNameInTable="columncateg_div" msprop:Generator_ColumnPropNameInRow="categ_div" msprop:Generator_ColumnPropNameInTable="categ_divColumn" msprop:Generator_UserColumnName="categ_div" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="stack_count" msprop:Generator_ColumnVarNameInTable="columnstack_count" msprop:Generator_ColumnPropNameInRow="stack_count" msprop:Generator_ColumnPropNameInTable="stack_countColumn" msprop:Generator_UserColumnName="stack_count" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="bad_weather_hit" msprop:Generator_ColumnVarNameInTable="columnbad_weather_hit" msprop:Generator_ColumnPropNameInRow="bad_weather_hit" msprop:Generator_ColumnPropNameInTable="bad_weather_hitColumn" msprop:Generator_UserColumnName="bad_weather_hit" type="xs:int" minOccurs="0" />
+              <xs:element name="check_guard" msprop:Generator_ColumnVarNameInTable="columncheck_guard" msprop:Generator_ColumnPropNameInRow="check_guard" msprop:Generator_ColumnPropNameInTable="check_guardColumn" msprop:Generator_UserColumnName="check_guard" type="xs:boolean" minOccurs="0" />
+              <xs:element name="check_parry" msprop:Generator_ColumnVarNameInTable="columncheck_parry" msprop:Generator_ColumnPropNameInRow="check_parry" msprop:Generator_ColumnPropNameInTable="check_parryColumn" msprop:Generator_UserColumnName="check_parry" type="xs:boolean" minOccurs="0" />
+              <xs:element name="check_dodge" msprop:Generator_ColumnVarNameInTable="columncheck_dodge" msprop:Generator_ColumnPropNameInRow="check_dodge" msprop:Generator_ColumnPropNameInTable="check_dodgeColumn" msprop:Generator_UserColumnName="check_dodge" type="xs:boolean" minOccurs="0" />
+              <xs:element name="atk_ability1" msprop:Generator_ColumnVarNameInTable="columnatk_ability1" msprop:Generator_ColumnPropNameInRow="atk_ability1" msprop:Generator_ColumnPropNameInTable="atk_ability1Column" msprop:Generator_UserColumnName="atk_ability1" type="xs:int" minOccurs="0" />
+              <xs:element name="atk_ability2" msprop:Generator_ColumnVarNameInTable="columnatk_ability2" msprop:Generator_ColumnPropNameInRow="atk_ability2" msprop:Generator_ColumnPropNameInTable="atk_ability2Column" msprop:Generator_UserColumnName="atk_ability2" type="xs:int" minOccurs="0" />
+              <xs:element name="dfe_bt_type" msprop:Generator_ColumnVarNameInTable="columndfe_bt_type" msprop:Generator_ColumnPropNameInRow="dfe_bt_type" msprop:Generator_ColumnPropNameInTable="dfe_bt_typeColumn" msprop:Generator_UserColumnName="dfe_bt_type" type="xs:int" minOccurs="0" />
+              <xs:element name="rating" msprop:Generator_ColumnVarNameInTable="columnrating" msprop:Generator_ColumnPropNameInRow="rating" msprop:Generator_ColumnPropNameInTable="ratingColumn" msprop:Generator_UserColumnName="rating" type="xs:int" minOccurs="0" />
+              <xs:element name="plus_score" msprop:Generator_ColumnVarNameInTable="columnplus_score" msprop:Generator_ColumnPropNameInRow="plus_score" msprop:Generator_ColumnPropNameInTable="plus_scoreColumn" msprop:Generator_UserColumnName="plus_score" type="xs:int" minOccurs="0" />
+              <xs:element name="random_damage" msprop:Generator_ColumnVarNameInTable="columnrandom_damage" msprop:Generator_ColumnPropNameInRow="random_damage" msprop:Generator_ColumnPropNameInTable="random_damageColumn" msprop:Generator_UserColumnName="random_damage" type="xs:boolean" minOccurs="0" />
+              <xs:element name="material_type" msprop:Generator_ColumnVarNameInTable="columnmaterial_type" msprop:Generator_ColumnPropNameInRow="material_type" msprop:Generator_ColumnPropNameInTable="material_typeColumn" msprop:Generator_UserColumnName="material_type" type="xs:int" minOccurs="0" />
+              <xs:element name="skill_id" msprop:Generator_ColumnVarNameInTable="columnskill_id" msprop:Generator_ColumnPropNameInRow="skill_id" msprop:Generator_ColumnPropNameInTable="skill_idColumn" msprop:Generator_UserColumnName="skill_id" type="xs:int" minOccurs="0" />
+              <xs:element name="anti_air" msprop:Generator_ColumnVarNameInTable="columnanti_air" msprop:Generator_ColumnPropNameInRow="anti_air" msprop:Generator_ColumnPropNameInTable="anti_airColumn" msprop:Generator_UserColumnName="anti_air" type="xs:boolean" minOccurs="0" />
+              <xs:element name="dfe_dis" msprop:Generator_ColumnVarNameInTable="columndfe_dis" msprop:Generator_ColumnPropNameInRow="dfe_dis" msprop:Generator_ColumnPropNameInTable="dfe_disColumn" msprop:Generator_UserColumnName="dfe_dis" type="xs:boolean" minOccurs="0" />
+              <xs:element name="database_view" msprop:Generator_ColumnVarNameInTable="columndatabase_view" msprop:Generator_ColumnPropNameInRow="database_view" msprop:Generator_ColumnPropNameInTable="database_viewColumn" msprop:Generator_UserColumnName="database_view" type="xs:boolean" minOccurs="0" />
+              <xs:element name="range_weapon" msprop:Generator_ColumnVarNameInTable="columnrange_weapon" msprop:Generator_ColumnPropNameInRow="range_weapon" msprop:Generator_ColumnPropNameInTable="range_weaponColumn" msprop:Generator_UserColumnName="range_weapon" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="mt_item_type_sub_category" msprop:Generator_UserTableName="mt_item_type_sub_category" msprop:Generator_RowEvArgName="mt_item_type_sub_categoryRowChangeEvent" msprop:Generator_TableVarName="tablemt_item_type_sub_category" msprop:Generator_TablePropName="mt_item_type_sub_category" msprop:Generator_RowDeletingName="mt_item_type_sub_categoryRowDeleting" msprop:Generator_RowChangingName="mt_item_type_sub_categoryRowChanging" msprop:Generator_RowDeletedName="mt_item_type_sub_categoryRowDeleted" msprop:Generator_RowEvHandlerName="mt_item_type_sub_categoryRowChangeEventHandler" msprop:Generator_RowChangedName="mt_item_type_sub_categoryRowChanged" msprop:Generator_TableClassName="mt_item_type_sub_categoryDataTable" msprop:Generator_RowClassName="mt_item_type_sub_categoryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="category_id" msprop:Generator_ColumnVarNameInTable="columncategory_id" msprop:Generator_ColumnPropNameInRow="category_id" msprop:Generator_ColumnPropNameInTable="category_idColumn" msprop:Generator_UserColumnName="category_id" type="xs:int" />
+              <xs:element name="type_id" msprop:Generator_ColumnVarNameInTable="columntype_id" msprop:Generator_ColumnPropNameInRow="type_id" msprop:Generator_ColumnPropNameInTable="type_idColumn" msprop:Generator_UserColumnName="type_id" type="xs:int" minOccurs="0" />
+              <xs:element name="sub_category" msprop:Generator_ColumnVarNameInTable="columnsub_category" msprop:Generator_ColumnPropNameInRow="sub_category" msprop:Generator_ColumnPropNameInTable="sub_categoryColumn" msprop:Generator_UserColumnName="sub_category" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="discharge" msprop:Generator_ColumnVarNameInTable="columndischarge" msprop:Generator_ColumnPropNameInRow="discharge" msprop:Generator_ColumnPropNameInTable="dischargeColumn" msprop:Generator_UserColumnName="discharge" type="xs:boolean" />
+              <xs:element name="range_id" msprop:Generator_ColumnVarNameInTable="columnrange_id" msprop:Generator_ColumnPropNameInRow="range_id" msprop:Generator_ColumnPropNameInTable="range_idColumn" msprop:Generator_UserColumnName="range_id" type="xs:int" minOccurs="0" />
+              <xs:element name="it_avoid" msprop:Generator_ColumnVarNameInTable="columnit_avoid" msprop:Generator_ColumnPropNameInRow="it_avoid" msprop:Generator_ColumnPropNameInTable="it_avoidColumn" msprop:Generator_UserColumnName="it_avoid" type="xs:int" minOccurs="0" />
+              <xs:element name="it_fire" msprop:Generator_ColumnVarNameInTable="columnit_fire" msprop:Generator_ColumnPropNameInRow="it_fire" msprop:Generator_ColumnPropNameInTable="it_fireColumn" msprop:Generator_UserColumnName="it_fire" type="xs:int" minOccurs="0" />
+              <xs:element name="it_freeze" msprop:Generator_ColumnVarNameInTable="columnit_freeze" msprop:Generator_ColumnPropNameInRow="it_freeze" msprop:Generator_ColumnPropNameInTable="it_freezeColumn" msprop:Generator_UserColumnName="it_freeze" type="xs:int" minOccurs="0" />
+              <xs:element name="it_air" msprop:Generator_ColumnVarNameInTable="columnit_air" msprop:Generator_ColumnPropNameInRow="it_air" msprop:Generator_ColumnPropNameInTable="it_airColumn" msprop:Generator_UserColumnName="it_air" type="xs:int" minOccurs="0" />
+              <xs:element name="it_earth" msprop:Generator_ColumnVarNameInTable="columnit_earth" msprop:Generator_ColumnPropNameInRow="it_earth" msprop:Generator_ColumnPropNameInTable="it_earthColumn" msprop:Generator_UserColumnName="it_earth" type="xs:int" minOccurs="0" />
+              <xs:element name="it_water" msprop:Generator_ColumnVarNameInTable="columnit_water" msprop:Generator_ColumnPropNameInRow="it_water" msprop:Generator_ColumnPropNameInTable="it_waterColumn" msprop:Generator_UserColumnName="it_water" type="xs:int" minOccurs="0" />
+              <xs:element name="it_thunder" msprop:Generator_ColumnVarNameInTable="columnit_thunder" msprop:Generator_ColumnPropNameInRow="it_thunder" msprop:Generator_ColumnPropNameInTable="it_thunderColumn" msprop:Generator_UserColumnName="it_thunder" type="xs:int" minOccurs="0" />
+              <xs:element name="it_holy" msprop:Generator_ColumnVarNameInTable="columnit_holy" msprop:Generator_ColumnPropNameInRow="it_holy" msprop:Generator_ColumnPropNameInTable="it_holyColumn" msprop:Generator_UserColumnName="it_holy" type="xs:int" minOccurs="0" />
+              <xs:element name="it_dark" msprop:Generator_ColumnVarNameInTable="columnit_dark" msprop:Generator_ColumnPropNameInRow="it_dark" msprop:Generator_ColumnPropNameInTable="it_darkColumn" msprop:Generator_UserColumnName="it_dark" type="xs:int" minOccurs="0" />
+              <xs:element name="it_slash" msprop:Generator_ColumnVarNameInTable="columnit_slash" msprop:Generator_ColumnPropNameInRow="it_slash" msprop:Generator_ColumnPropNameInTable="it_slashColumn" msprop:Generator_UserColumnName="it_slash" type="xs:int" minOccurs="0" />
+              <xs:element name="it_pierce" msprop:Generator_ColumnVarNameInTable="columnit_pierce" msprop:Generator_ColumnPropNameInRow="it_pierce" msprop:Generator_ColumnPropNameInTable="it_pierceColumn" msprop:Generator_UserColumnName="it_pierce" type="xs:int" minOccurs="0" />
+              <xs:element name="it_strike" msprop:Generator_ColumnVarNameInTable="columnit_strike" msprop:Generator_ColumnPropNameInRow="it_strike" msprop:Generator_ColumnPropNameInTable="it_strikeColumn" msprop:Generator_UserColumnName="it_strike" type="xs:int" minOccurs="0" />
+              <xs:element name="it_break" msprop:Generator_ColumnVarNameInTable="columnit_break" msprop:Generator_ColumnPropNameInRow="it_break" msprop:Generator_ColumnPropNameInTable="it_breakColumn" msprop:Generator_UserColumnName="it_break" type="xs:int" minOccurs="0" />
+              <xs:element name="it_attack_type" msprop:Generator_ColumnVarNameInTable="columnit_attack_type" msprop:Generator_ColumnPropNameInRow="it_attack_type" msprop:Generator_ColumnPropNameInTable="it_attack_typeColumn" msprop:Generator_UserColumnName="it_attack_type" type="xs:int" minOccurs="0" />
+              <xs:element name="charge" msprop:Generator_ColumnVarNameInTable="columncharge" msprop:Generator_ColumnPropNameInRow="charge" msprop:Generator_ColumnPropNameInTable="chargeColumn" msprop:Generator_UserColumnName="charge" type="xs:int" minOccurs="0" />
+              <xs:element name="range" msprop:Generator_ColumnVarNameInTable="columnrange" msprop:Generator_ColumnPropNameInRow="range" msprop:Generator_ColumnPropNameInTable="rangeColumn" msprop:Generator_UserColumnName="range" type="xs:int" minOccurs="0" />
+              <xs:element name="effects" msprop:Generator_ColumnVarNameInTable="columneffects" msprop:Generator_ColumnPropNameInRow="effects" msprop:Generator_ColumnPropNameInTable="effectsColumn" msprop:Generator_UserColumnName="effects" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fd_effects" msprop:Generator_ColumnVarNameInTable="columnfd_effects" msprop:Generator_ColumnPropNameInRow="fd_effects" msprop:Generator_ColumnPropNameInTable="fd_effectsColumn" msprop:Generator_UserColumnName="fd_effects" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cad_effects" msprop:Generator_ColumnVarNameInTable="columncad_effects" msprop:Generator_ColumnPropNameInRow="cad_effects" msprop:Generator_ColumnPropNameInTable="cad_effectsColumn" msprop:Generator_UserColumnName="cad_effects" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="it_critical" msprop:Generator_ColumnVarNameInTable="columnit_critical" msprop:Generator_ColumnPropNameInRow="it_critical" msprop:Generator_ColumnPropNameInTable="it_criticalColumn" msprop:Generator_UserColumnName="it_critical" type="xs:int" minOccurs="0" />
+              <xs:element name="critical_type" msprop:Generator_ColumnVarNameInTable="columncritical_type" msprop:Generator_ColumnPropNameInRow="critical_type" msprop:Generator_ColumnPropNameInTable="critical_typeColumn" msprop:Generator_UserColumnName="critical_type" type="xs:int" minOccurs="0" />
+              <xs:element name="create_skill_id" msprop:Generator_ColumnVarNameInTable="columncreate_skill_id" msprop:Generator_ColumnPropNameInRow="create_skill_id" msprop:Generator_ColumnPropNameInTable="create_skill_idColumn" msprop:Generator_UserColumnName="create_skill_id" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:mt_item_type" />
+      <xs:field xpath="mstns:type_id" />
+    </xs:unique>
+    <xs:unique name="mt_item_type_sub_category_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:mt_item_type_sub_category" />
+      <xs:field xpath="mstns:category_id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

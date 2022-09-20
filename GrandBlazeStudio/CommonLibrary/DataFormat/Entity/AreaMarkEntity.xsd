@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AreaMarkEntity" targetNamespace="http://tempuri.org/AreaMarkEntity.xsd" xmlns:mstns="http://tempuri.org/AreaMarkEntity.xsd" xmlns="http://tempuri.org/AreaMarkEntity.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="GrandBlazeMasterConnectionString1" IsAppSettingsProperty="true" Modifier="Assembly" Name="GrandBlazeMasterConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.CommonLibrary.CommonProperty.Properties.Settings.GlobalReference.Default.GrandBlazeMasterConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AreaMarkEntity" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="AreaMarkEntity" msprop:Generator_UserDSName="AreaMarkEntity">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="mt_nation_list" msprop:Generator_UserTableName="mt_nation_list" msprop:Generator_RowEvArgName="nation_listRowChangeEvent" msprop:Generator_TableVarName="tablenation_list" msprop:Generator_TablePropName="mt_nation_list" msprop:Generator_RowDeletingName="nation_listRowDeleting" msprop:Generator_RowChangingName="nation_listRowChanging" msprop:Generator_RowDeletedName="nation_listRowDeleted" msprop:Generator_RowEvHandlerName="nation_listRowChangeEventHandler" msprop:Generator_RowChangedName="nation_listRowChanged" msprop:Generator_TableClassName="nation_listDataTable" msprop:Generator_RowClassName="nation_listRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nation_id" msprop:Generator_ColumnVarNameInTable="columnnation_id" msprop:Generator_ColumnPropNameInRow="nation_id" msprop:Generator_ColumnPropNameInTable="nation_idColumn" msprop:Generator_UserColumnName="nation_id" type="xs:int" />
+              <xs:element name="nation_name" msprop:Generator_ColumnVarNameInTable="columnnation_name" msprop:Generator_ColumnPropNameInRow="nation_name" msprop:Generator_ColumnPropNameInTable="nation_nameColumn" msprop:Generator_UserColumnName="nation_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="mt_area_list" msprop:Generator_UserTableName="mt_area_list" msprop:Generator_RowEvArgName="mt_area_listRowChangeEvent" msprop:Generator_TableVarName="tablemt_area_list" msprop:Generator_TablePropName="mt_area_list" msprop:Generator_RowDeletingName="mt_area_listRowDeleting" msprop:Generator_RowChangingName="mt_area_listRowChanging" msprop:Generator_RowDeletedName="mt_area_listRowDeleted" msprop:Generator_RowEvHandlerName="mt_area_listRowChangeEventHandler" msprop:Generator_RowChangedName="mt_area_listRowChanged" msprop:Generator_TableClassName="mt_area_listDataTable" msprop:Generator_RowClassName="mt_area_listRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="area_id" msprop:Generator_ColumnVarNameInTable="columnarea_id" msprop:Generator_ColumnPropNameInRow="area_id" msprop:Generator_ColumnPropNameInTable="area_idColumn" msprop:Generator_UserColumnName="area_id" type="xs:int" />
+              <xs:element name="area_name" msprop:Generator_ColumnVarNameInTable="columnarea_name" msprop:Generator_ColumnPropNameInRow="area_name" msprop:Generator_ColumnPropNameInTable="area_nameColumn" msprop:Generator_UserColumnName="area_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nation_id" msprop:Generator_ColumnVarNameInTable="columnnation_id" msprop:Generator_ColumnPropNameInRow="nation_id" msprop:Generator_ColumnPropNameInTable="nation_idColumn" msprop:Generator_UserColumnName="nation_id" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:mt_nation_list" />
+      <xs:field xpath="mstns:nation_id" />
+    </xs:unique>
+    <xs:unique name="mt_area_list_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:mt_area_list" />
+      <xs:field xpath="mstns:area_id" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="nation_list_mt_area_list" msdata:parent="mt_nation_list" msdata:child="mt_area_list" msdata:parentkey="nation_id" msdata:childkey="nation_id" msprop:Generator_UserChildTable="mt_area_list" msprop:Generator_ChildPropName="Getmt_area_listRows" msprop:Generator_ParentPropName="nation_listRow" msprop:Generator_UserRelationName="nation_list_mt_area_list" msprop:Generator_RelationVarName="relationnation_list_mt_area_list" msprop:Generator_UserParentTable="mt_nation_list" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

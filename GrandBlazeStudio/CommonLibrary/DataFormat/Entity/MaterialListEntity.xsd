@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MaterialListEntity" targetNamespace="http://tempuri.org/MaterialListEntity.xsd" xmlns:mstns="http://tempuri.org/MaterialListEntity.xsd" xmlns="http://tempuri.org/MaterialListEntity.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="MaterialListEntity" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="MaterialListEntity" msprop:Generator_DataSetName="MaterialListEntity">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="material" msprop:Generator_UserTableName="material" msprop:Generator_RowDeletedName="materialRowDeleted" msprop:Generator_RowChangedName="materialRowChanged" msprop:Generator_RowClassName="materialRow" msprop:Generator_RowChangingName="materialRowChanging" msprop:Generator_RowEvArgName="materialRowChangeEvent" msprop:Generator_RowEvHandlerName="materialRowChangeEventHandler" msprop:Generator_TableClassName="materialDataTable" msprop:Generator_TableVarName="tablematerial" msprop:Generator_RowDeletingName="materialRowDeleting" msprop:Generator_TablePropName="material">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="material_id" msprop:Generator_UserColumnName="material_id" msprop:Generator_ColumnPropNameInRow="material_id" msprop:Generator_ColumnVarNameInTable="columnmaterial_id" msprop:Generator_ColumnPropNameInTable="material_idColumn" type="xs:int" />
+              <xs:element name="material_count" msprop:Generator_UserColumnName="material_count" msprop:Generator_ColumnPropNameInRow="material_count" msprop:Generator_ColumnVarNameInTable="columnmaterial_count" msprop:Generator_ColumnPropNameInTable="material_countColumn" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:material" />
+      <xs:field xpath="mstns:material_id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

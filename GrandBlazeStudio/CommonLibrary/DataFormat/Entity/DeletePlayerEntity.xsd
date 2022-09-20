@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DeletePlayerEntity" targetNamespace="http://tempuri.org/DeletePlayerEntity.xsd" xmlns:mstns="http://tempuri.org/DeletePlayerEntity.xsd" xmlns="http://tempuri.org/DeletePlayerEntity.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DeletePlayerEntity" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DeletePlayerEntity" msprop:Generator_UserDSName="DeletePlayerEntity">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ts_delete_players" msprop:Generator_TableClassName="ts_delete_playersDataTable" msprop:Generator_TableVarName="tablets_delete_players" msprop:Generator_TablePropName="ts_delete_players" msprop:Generator_RowDeletingName="ts_delete_playersRowDeleting" msprop:Generator_UserTableName="ts_delete_players" msprop:Generator_RowChangingName="ts_delete_playersRowChanging" msprop:Generator_RowEvHandlerName="ts_delete_playersRowChangeEventHandler" msprop:Generator_RowDeletedName="ts_delete_playersRowDeleted" msprop:Generator_RowEvArgName="ts_delete_playersRowChangeEvent" msprop:Generator_RowChangedName="ts_delete_playersRowChanged" msprop:Generator_RowClassName="ts_delete_playersRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="entry_no" msprop:Generator_ColumnVarNameInTable="columnentry_no" msprop:Generator_ColumnPropNameInRow="entry_no" msprop:Generator_ColumnPropNameInTable="entry_noColumn" msprop:Generator_UserColumnName="entry_no" type="xs:int" />
+              <xs:element name="update_cnt" msprop:Generator_ColumnVarNameInTable="columnupdate_cnt" msprop:Generator_ColumnPropNameInRow="update_cnt" msprop:Generator_ColumnPropNameInTable="update_cntColumn" msprop:Generator_UserColumnName="update_cnt" type="xs:int" />
+              <xs:element name="created_at" msprop:Generator_ColumnVarNameInTable="columncreated_at" msprop:Generator_ColumnPropNameInRow="created_at" msprop:Generator_ColumnPropNameInTable="created_atColumn" msprop:Generator_UserColumnName="created_at" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ts_delete_players" />
+      <xs:field xpath="mstns:update_cnt" />
+      <xs:field xpath="mstns:entry_no" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

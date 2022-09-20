@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PlayerMemoEntity" targetNamespace="http://tempuri.org/PlayerMemoEntity.xsd" xmlns:mstns="http://tempuri.org/PlayerMemoEntity.xsd" xmlns="http://tempuri.org/PlayerMemoEntity.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="GrandBlazeDataConnectionString1" IsAppSettingsProperty="true" Modifier="Assembly" Name="GrandBlazeDataConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.CommonLibrary.Properties.Settings.GlobalReference.Default.GrandBlazeDataConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PlayerMemoEntity" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="PlayerMemoEntity" msprop:Generator_DataSetName="PlayerMemoEntity" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="temp_character_system_message" msprop:Generator_UserTableName="temp_character_system_message" msprop:Generator_RowDeletedName="temp_character_system_messageRowDeleted" msprop:Generator_RowChangedName="temp_character_system_messageRowChanged" msprop:Generator_RowClassName="temp_character_system_messageRow" msprop:Generator_RowChangingName="temp_character_system_messageRowChanging" msprop:Generator_RowEvArgName="temp_character_system_messageRowChangeEvent" msprop:Generator_RowEvHandlerName="temp_character_system_messageRowChangeEventHandler" msprop:Generator_TableClassName="temp_character_system_messageDataTable" msprop:Generator_TableVarName="tabletemp_character_system_message" msprop:Generator_RowDeletingName="temp_character_system_messageRowDeleting" msprop:Generator_TablePropName="temp_character_system_message">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="entry_no" msprop:Generator_UserColumnName="entry_no" msprop:Generator_ColumnVarNameInTable="columnentry_no" msprop:Generator_ColumnPropNameInRow="entry_no" msprop:Generator_ColumnPropNameInTable="entry_noColumn" type="xs:int" />
+              <xs:element name="memo_type" msprop:Generator_UserColumnName="memo_type" msprop:Generator_ColumnVarNameInTable="columnmemo_type" msprop:Generator_ColumnPropNameInRow="memo_type" msprop:Generator_ColumnPropNameInTable="memo_typeColumn" type="xs:int" />
+              <xs:element name="memo_id" msprop:Generator_UserColumnName="memo_id" msprop:Generator_ColumnVarNameInTable="columnmemo_id" msprop:Generator_ColumnPropNameInRow="memo_id" msprop:Generator_ColumnPropNameInTable="memo_idColumn" type="xs:int" />
+              <xs:element name="memo" msprop:Generator_UserColumnName="memo" msprop:Generator_ColumnVarNameInTable="columnmemo" msprop:Generator_ColumnPropNameInRow="memo" msprop:Generator_ColumnPropNameInTable="memoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="memo_level" msprop:Generator_UserColumnName="memo_level" msprop:Generator_ColumnVarNameInTable="columnmemo_level" msprop:Generator_ColumnPropNameInRow="memo_level" msprop:Generator_ColumnPropNameInTable="memo_levelColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:temp_character_system_message" />
+      <xs:field xpath="mstns:entry_no" />
+      <xs:field xpath="mstns:memo_type" />
+      <xs:field xpath="mstns:memo_id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

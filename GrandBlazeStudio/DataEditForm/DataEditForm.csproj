@@ -1,0 +1,455 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{89D88AD3-6B3A-419D-94A5-9F4A4469C59C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataEditForm</RootNamespace>
+    <AssemblyName>DataEditForm</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\GrandBlazeStudio\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Azuki">
+      <HintPath>..\CommonFormLibrary\Azuki.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Area\AreaMarkPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Area\AreaMarkPanel.Designer.cs">
+      <DependentUpon>AreaMarkPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quest\MarkEditDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quest\MarkEditDialog.Designer.cs">
+      <DependentUpon>MarkEditDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quest\PopMonster\MonsterSettingDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quest\PopMonster\MonsterSettingDialog.Designer.cs">
+      <DependentUpon>MonsterSettingDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quest\PopMonster\PopMonsterSettingDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quest\PopMonster\PopMonsterSettingDialog.Designer.cs">
+      <DependentUpon>PopMonsterSettingDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quest\Weather\WeatherSettingDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quest\Weather\WeatherSettingDialog.Designer.cs">
+      <DependentUpon>WeatherSettingDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBaseMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataBaseMain.Designer.cs">
+      <DependentUpon>DataBaseMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Field\FieldDataPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Field\FieldDataPanel.Designer.cs">
+      <DependentUpon>FieldDataPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Guest\Details\GuestActionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Guest\Details\GuestActionDialog.Designer.cs">
+      <DependentUpon>GuestActionDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Guest\Details\GuestSerifDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Guest\Details\GuestSerifDialog.Designer.cs">
+      <DependentUpon>GuestSerifDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Guest\Details\SubDialog\GuestActionEditDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Guest\Details\SubDialog\GuestActionEditDialog.Designer.cs">
+      <DependentUpon>GuestActionEditDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Guest\Details\SubDialog\SerifSettingDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Guest\Details\SubDialog\SerifSettingDialog.Designer.cs">
+      <DependentUpon>SerifSettingDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Guest\GuestFilterDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Guest\GuestFilterDialog.Designer.cs">
+      <DependentUpon>GuestFilterDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Guest\GuestMainPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Guest\GuestMainPanel.Designer.cs">
+      <DependentUpon>GuestMainPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstallClass\InstallClassPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InstallClass\InstallClassPanel.Designer.cs">
+      <DependentUpon>InstallClassPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstallClass\InstallPerksEditDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InstallClass\InstallPerksEditDialog.Designer.cs">
+      <DependentUpon>InstallPerksEditDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Item\ItemFilterDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Item\ItemFilterDialog.Designer.cs">
+      <DependentUpon>ItemFilterDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Item\ItemMainPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Item\ItemMainPanel.Designer.cs">
+      <DependentUpon>ItemMainPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Item\ItemUseEventDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Item\ItemUseEventDialog.Designer.cs">
+      <DependentUpon>ItemUseEventDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeyItem\KeyItemPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KeyItem\KeyItemPanel.Designer.cs">
+      <DependentUpon>KeyItemPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Monster\Common\MonsterActionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Monster\Common\MonsterActionDialog.Designer.cs">
+      <DependentUpon>MonsterActionDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Monster\Common\MonsterElementDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Monster\Common\MonsterElementDialog.Designer.cs">
+      <DependentUpon>MonsterElementDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Monster\Common\MonsterItemDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Monster\Common\MonsterItemDialog.Designer.cs">
+      <DependentUpon>MonsterItemDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Monster\Common\MonsterSerifDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Monster\Common\MonsterSerifDialog.Designer.cs">
+      <DependentUpon>MonsterSerifDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Monster\Common\SubDialog\MonsterActionEditDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Monster\Common\SubDialog\MonsterActionEditDialog.Designer.cs">
+      <DependentUpon>MonsterActionEditDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Monster\Common\SubDialog\SerifSettingDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Monster\Common\SubDialog\SerifSettingDialog.Designer.cs">
+      <DependentUpon>SerifSettingDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Monster\Data\MonsterDataFilterDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Monster\Data\MonsterDataFilterDialog.Designer.cs">
+      <DependentUpon>MonsterDataFilterDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Monster\Data\MonsterDataPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Monster\Data\MonsterDataPanel.Designer.cs">
+      <DependentUpon>MonsterDataPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quest\QuestCommentDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quest\QuestCommentDialog.Designer.cs">
+      <DependentUpon>QuestCommentDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Skill\SkillMainPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Skill\SkillMainPanel.Designer.cs">
+      <DependentUpon>SkillMainPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Quest\QuestEditPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Quest\QuestEditPanel.Designer.cs">
+      <DependentUpon>QuestEditPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetBonus\SetBonusPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SetBonus\SetBonusPanel.Designer.cs">
+      <DependentUpon>SetBonusPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SkillGet\PerksGetListPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SkillGet\PerksGetListPanel.Designer.cs">
+      <DependentUpon>PerksGetListPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Skill\SkillFilterDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Skill\SkillFilterDialog.Designer.cs">
+      <DependentUpon>SkillFilterDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatusData\StatusEditPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StatusData\StatusEditPanel.Designer.cs">
+      <DependentUpon>StatusEditPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trap\TrapDataPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Trap\TrapDataPanel.Designer.cs">
+      <DependentUpon>TrapDataPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Weather\WeatherDataPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Weather\WeatherDataPanel.Designer.cs">
+      <DependentUpon>WeatherDataPanel.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Area\AreaMarkPanel.resx">
+      <DependentUpon>AreaMarkPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quest\MarkEditDialog.resx">
+      <DependentUpon>MarkEditDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quest\PopMonster\MonsterSettingDialog.resx">
+      <DependentUpon>MonsterSettingDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quest\PopMonster\PopMonsterSettingDialog.resx">
+      <DependentUpon>PopMonsterSettingDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quest\Weather\WeatherSettingDialog.resx">
+      <DependentUpon>WeatherSettingDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataBaseMain.resx">
+      <DependentUpon>DataBaseMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Field\FieldDataPanel.resx">
+      <DependentUpon>FieldDataPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Guest\Details\GuestActionDialog.resx">
+      <DependentUpon>GuestActionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Guest\Details\GuestSerifDialog.resx">
+      <DependentUpon>GuestSerifDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Guest\Details\SubDialog\GuestActionEditDialog.resx">
+      <DependentUpon>GuestActionEditDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Guest\Details\SubDialog\SerifSettingDialog.resx">
+      <DependentUpon>SerifSettingDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Guest\GuestFilterDialog.resx">
+      <DependentUpon>GuestFilterDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Guest\GuestMainPanel.resx">
+      <DependentUpon>GuestMainPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstallClass\InstallClassPanel.resx">
+      <DependentUpon>InstallClassPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstallClass\InstallPerksEditDialog.resx">
+      <DependentUpon>InstallPerksEditDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Item\ItemFilterDialog.resx">
+      <DependentUpon>ItemFilterDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Item\ItemMainPanel.resx">
+      <DependentUpon>ItemMainPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Item\ItemUseEventDialog.resx">
+      <DependentUpon>ItemUseEventDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KeyItem\KeyItemPanel.resx">
+      <DependentUpon>KeyItemPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Monster\Common\MonsterActionDialog.resx">
+      <DependentUpon>MonsterActionDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Monster\Common\MonsterElementDialog.resx">
+      <DependentUpon>MonsterElementDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Monster\Common\MonsterItemDialog.resx">
+      <DependentUpon>MonsterItemDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Monster\Common\MonsterSerifDialog.resx">
+      <DependentUpon>MonsterSerifDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Monster\Common\SubDialog\MonsterActionEditDialog.resx">
+      <DependentUpon>MonsterActionEditDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Monster\Common\SubDialog\SerifSettingDialog.resx">
+      <DependentUpon>SerifSettingDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Monster\Data\MonsterDataFilterDialog.resx">
+      <DependentUpon>MonsterDataFilterDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Monster\Data\MonsterDataPanel.resx">
+      <DependentUpon>MonsterDataPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quest\QuestCommentDialog.resx">
+      <DependentUpon>QuestCommentDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Skill\SkillMainPanel.resx">
+      <DependentUpon>SkillMainPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx" />
+    <EmbeddedResource Include="Quest\QuestEditPanel.resx">
+      <DependentUpon>QuestEditPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetBonus\SetBonusPanel.resx">
+      <DependentUpon>SetBonusPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SkillGet\PerksGetListPanel.resx">
+      <DependentUpon>PerksGetListPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Skill\SkillFilterDialog.resx">
+      <DependentUpon>SkillFilterDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatusData\StatusEditPanel.resx">
+      <DependentUpon>StatusEditPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trap\TrapDataPanel.resx">
+      <DependentUpon>TrapDataPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Weather\WeatherDataPanel.resx">
+      <DependentUpon>WeatherDataPanel.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonLibrary\CommonLibrary.csproj">
+      <Project>{1E1A83B5-EA45-421A-87C9-AC197BCC7C37}</Project>
+      <Name>CommonLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

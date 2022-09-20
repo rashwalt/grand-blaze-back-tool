@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReinforceEntity" targetNamespace="http://tempuri.org/ReinforceEntity.xsd" xmlns:mstns="http://tempuri.org/ReinforceEntity.xsd" xmlns="http://tempuri.org/ReinforceEntity.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ReinforceEntity" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ReinforceEntity" msprop:Generator_UserDSName="ReinforceEntity">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="reinforce" msprop:Generator_UserTableName="reinforce" msprop:Generator_RowEvArgName="reinforceRowChangeEvent" msprop:Generator_TableVarName="tablereinforce" msprop:Generator_TablePropName="reinforce" msprop:Generator_RowDeletingName="reinforceRowDeleting" msprop:Generator_RowChangingName="reinforceRowChanging" msprop:Generator_RowDeletedName="reinforceRowDeleted" msprop:Generator_TableClassName="reinforceDataTable" msprop:Generator_RowChangedName="reinforceRowChanged" msprop:Generator_RowEvHandlerName="reinforceRowChangeEventHandler" msprop:Generator_RowClassName="reinforceRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="monster_id" msprop:Generator_ColumnVarNameInTable="columnmonster_id" msprop:Generator_ColumnPropNameInRow="monster_id" msprop:Generator_ColumnPropNameInTable="monster_idColumn" msprop:Generator_UserColumnName="monster_id" type="xs:int" minOccurs="0" />
+              <xs:element name="belong" msprop:Generator_ColumnVarNameInTable="columnbelong" msprop:Generator_ColumnPropNameInRow="belong" msprop:Generator_ColumnPropNameInTable="belongColumn" msprop:Generator_UserColumnName="belong" type="xs:int" minOccurs="0" />
+              <xs:element name="time_count" msprop:Generator_ColumnVarNameInTable="columntime_count" msprop:Generator_ColumnPropNameInRow="time_count" msprop:Generator_ColumnPropNameInTable="time_countColumn" msprop:Generator_UserColumnName="time_count" type="xs:int" minOccurs="0" />
+              <xs:element name="limit_visitor" msprop:Generator_ColumnVarNameInTable="columnlimit_visitor" msprop:Generator_ColumnPropNameInRow="limit_visitor" msprop:Generator_ColumnPropNameInTable="limit_visitorColumn" msprop:Generator_UserColumnName="limit_visitor" type="xs:int" minOccurs="0" />
+              <xs:element name="time_counter" msprop:Generator_ColumnVarNameInTable="columntime_counter" msprop:Generator_ColumnPropNameInRow="time_counter" msprop:Generator_ColumnPropNameInTable="time_counterColumn" msprop:Generator_UserColumnName="time_counter" type="xs:int" minOccurs="0" />
+              <xs:element name="last_time" msprop:Generator_ColumnVarNameInTable="columnlast_time" msprop:Generator_ColumnPropNameInRow="last_time" msprop:Generator_ColumnPropNameInTable="last_timeColumn" msprop:Generator_UserColumnName="last_time" type="xs:int" minOccurs="0" />
+              <xs:element name="last_battle_id" msprop:Generator_ColumnVarNameInTable="columnlast_battle_id" msprop:Generator_ColumnPropNameInRow="last_battle_id" msprop:Generator_ColumnPropNameInTable="last_battle_idColumn" msprop:Generator_UserColumnName="last_battle_id" type="xs:int" minOccurs="0" />
+              <xs:element name="multi_count" msprop:Generator_ColumnVarNameInTable="columnmulti_count" msprop:Generator_ColumnPropNameInRow="multi_count" msprop:Generator_ColumnPropNameInTable="multi_countColumn" msprop:Generator_UserColumnName="multi_count" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

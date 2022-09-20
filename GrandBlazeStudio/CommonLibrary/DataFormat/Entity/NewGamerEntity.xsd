@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NewGamerEntity" targetNamespace="http://tempuri.org/NewGamerEntity.xsd" xmlns:mstns="http://tempuri.org/NewGamerEntity.xsd" xmlns="http://tempuri.org/NewGamerEntity.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="GrandBlazeDataConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="GrandBlazeDataConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.CommonLibrary.Properties.Settings.GlobalReference.Default.GrandBlazeDataConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="NewGamerEntity" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="NewGamerEntity" msprop:Generator_UserDSName="NewGamerEntity">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ts_newgame_player" msprop:Generator_UserTableName="ts_newgame_player" msprop:Generator_RowEvArgName="ts_newgame_playerRowChangeEvent" msprop:Generator_TableVarName="tablets_newgame_player" msprop:Generator_TablePropName="ts_newgame_player" msprop:Generator_RowDeletingName="ts_newgame_playerRowDeleting" msprop:Generator_RowChangingName="ts_newgame_playerRowChanging" msprop:Generator_RowDeletedName="ts_newgame_playerRowDeleted" msprop:Generator_TableClassName="ts_newgame_playerDataTable" msprop:Generator_RowChangedName="ts_newgame_playerRowChanged" msprop:Generator_RowEvHandlerName="ts_newgame_playerRowChangeEventHandler" msprop:Generator_RowClassName="ts_newgame_playerRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="entry_no" msprop:Generator_ColumnVarNameInTable="columnentry_no" msprop:Generator_ColumnPropNameInRow="entry_no" msprop:Generator_ColumnPropNameInTable="entry_noColumn" msprop:Generator_UserColumnName="entry_no" type="xs:int" />
+              <xs:element name="character_name" msprop:Generator_ColumnVarNameInTable="columncharacter_name" msprop:Generator_ColumnPropNameInRow="character_name" msprop:Generator_ColumnPropNameInTable="character_nameColumn" msprop:Generator_UserColumnName="character_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nick_name" msprop:Generator_ColumnVarNameInTable="columnnick_name" msprop:Generator_ColumnPropNameInRow="nick_name" msprop:Generator_ColumnPropNameInTable="nick_nameColumn" msprop:Generator_UserColumnName="nick_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="sex" msprop:Generator_ColumnVarNameInTable="columnsex" msprop:Generator_ColumnPropNameInRow="sex" msprop:Generator_ColumnPropNameInTable="sexColumn" msprop:Generator_UserColumnName="sex" type="xs:int" minOccurs="0" />
+              <xs:element name="age" msprop:Generator_ColumnVarNameInTable="columnage" msprop:Generator_ColumnPropNameInRow="age" msprop:Generator_ColumnPropNameInTable="ageColumn" msprop:Generator_UserColumnName="age" type="xs:int" minOccurs="0" />
+              <xs:element name="height" msprop:Generator_ColumnVarNameInTable="columnheight" msprop:Generator_ColumnPropNameInRow="height" msprop:Generator_ColumnPropNameInTable="heightColumn" msprop:Generator_UserColumnName="height" type="xs:int" minOccurs="0" />
+              <xs:element name="weight" msprop:Generator_ColumnVarNameInTable="columnweight" msprop:Generator_ColumnPropNameInRow="weight" msprop:Generator_ColumnPropNameInTable="weightColumn" msprop:Generator_UserColumnName="weight" type="xs:int" minOccurs="0" />
+              <xs:element name="nation" msprop:Generator_ColumnVarNameInTable="columnnation" msprop:Generator_ColumnPropNameInRow="nation" msprop:Generator_ColumnPropNameInTable="nationColumn" msprop:Generator_UserColumnName="nation" type="xs:int" minOccurs="0" />
+              <xs:element name="image_url" msprop:Generator_ColumnVarNameInTable="columnimage_url" msprop:Generator_ColumnPropNameInRow="image_url" msprop:Generator_ColumnPropNameInTable="image_urlColumn" msprop:Generator_UserColumnName="image_url" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="image_width" msprop:Generator_ColumnVarNameInTable="columnimage_width" msprop:Generator_ColumnPropNameInRow="image_width" msprop:Generator_ColumnPropNameInTable="image_widthColumn" msprop:Generator_UserColumnName="image_width" type="xs:int" minOccurs="0" />
+              <xs:element name="image_height" msprop:Generator_ColumnVarNameInTable="columnimage_height" msprop:Generator_ColumnPropNameInRow="image_height" msprop:Generator_ColumnPropNameInTable="image_heightColumn" msprop:Generator_UserColumnName="image_height" type="xs:int" minOccurs="0" />
+              <xs:element name="image_link_url" msprop:Generator_ColumnVarNameInTable="columnimage_link_url" msprop:Generator_ColumnPropNameInRow="image_link_url" msprop:Generator_ColumnPropNameInTable="image_link_urlColumn" msprop:Generator_UserColumnName="image_link_url" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="image_copyright" msprop:Generator_ColumnVarNameInTable="columnimage_copyright" msprop:Generator_ColumnPropNameInRow="image_copyright" msprop:Generator_ColumnPropNameInTable="image_copyrightColumn" msprop:Generator_UserColumnName="image_copyright" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="install_class_no" msprop:Generator_ColumnVarNameInTable="columninstall_class_no" msprop:Generator_ColumnPropNameInRow="install_class_no" msprop:Generator_ColumnPropNameInTable="install_class_noColumn" msprop:Generator_UserColumnName="install_class_no" type="xs:int" minOccurs="0" />
+              <xs:element name="race" msprop:Generator_ColumnVarNameInTable="columnrace" msprop:Generator_ColumnPropNameInRow="race" msprop:Generator_ColumnPropNameInTable="raceColumn" msprop:Generator_UserColumnName="race" type="xs:int" minOccurs="0" />
+              <xs:element name="guardian" msprop:Generator_ColumnVarNameInTable="columnguardian" msprop:Generator_ColumnPropNameInRow="guardian" msprop:Generator_ColumnPropNameInTable="guardianColumn" msprop:Generator_UserColumnName="guardian" type="xs:int" minOccurs="0" />
+              <xs:element name="main_weapon" msprop:Generator_ColumnVarNameInTable="columnmain_weapon" msprop:Generator_ColumnPropNameInRow="main_weapon" msprop:Generator_ColumnPropNameInTable="main_weaponColumn" msprop:Generator_UserColumnName="main_weapon" type="xs:int" minOccurs="0" />
+              <xs:element name="unique_name" msprop:Generator_ColumnVarNameInTable="columnunique_name" msprop:Generator_ColumnPropNameInRow="unique_name" msprop:Generator_ColumnPropNameInTable="unique_nameColumn" msprop:Generator_UserColumnName="unique_name" type="xs:string" minOccurs="0" />
+              <xs:element name="time" msprop:Generator_ColumnVarNameInTable="columntime" msprop:Generator_ColumnPropNameInRow="time" msprop:Generator_ColumnPropNameInTable="timeColumn" msprop:Generator_UserColumnName="time" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ip_address" msprop:Generator_ColumnVarNameInTable="columnip_address" msprop:Generator_ColumnPropNameInRow="ip_address" msprop:Generator_ColumnPropNameInTable="ip_addressColumn" msprop:Generator_UserColumnName="ip_address" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="host_address" msprop:Generator_ColumnVarNameInTable="columnhost_address" msprop:Generator_ColumnPropNameInRow="host_address" msprop:Generator_ColumnPropNameInTable="host_addressColumn" msprop:Generator_UserColumnName="host_address" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="agent" msprop:Generator_ColumnVarNameInTable="columnagent" msprop:Generator_ColumnPropNameInRow="agent" msprop:Generator_ColumnPropNameInTable="agentColumn" msprop:Generator_UserColumnName="agent" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ts_newgame_player" />
+      <xs:field xpath="mstns:entry_no" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
